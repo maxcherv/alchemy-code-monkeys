@@ -91,3 +91,20 @@ Heejin:
 - Working on security part of project
 - Created profiles
 - Needs to work on permission sets, record level security, field level security
+
+
+
+Week 1 Retrospective
+
+What went well:
+- Object creation, field creation and relationships
+- Entity Relationship Diagrams
+
+What didn't go well:
+- We had trouble understanding / executing security concepts
+- A handful of us fell behind early on in our exercises and projects
+
+What can be improved:
+- Better time management
+- Making sure to stay up-to-date
+- Communicating with each other more often
