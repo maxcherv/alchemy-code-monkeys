@@ -108,3 +108,23 @@ What can be improved:
 - Better time management
 - Making sure to stay up-to-date
 - Communicating with each other more often
+
+
+
+8/4 Standup Notes
+
+Hamza:
+- Restructuring project to use more standard objects
+- Working through security, such as adding OWDs
+
+Annabell:
+- Thinking about what we're learning (Apex) and how to implement it
+- Identifying possible user stories to add to project
+
+Huguette:
+- Setting up security on objects and profiles on project
+- Adding missing components to ERD
+- Working on Trailhead badges
+
+Heejin:
+- Working on security and Github Trailheads
