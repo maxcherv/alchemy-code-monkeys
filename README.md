@@ -128,3 +128,29 @@ Huguette:
 
 Heejin:
 - Working on security and Github Trailheads
+
+8/5
+
+Hamza:
+- Figured out stucture for project after speaking to Jared
+- Now implementing changes to objects, profiles, roles, etc.
+- Feel fairly confident in Apex so far
+
+Annabell:
+- Will need some more direct help / practice with Apex
+- Feels that in-class notes so far haven't been sufficient for challenges
+- Planning on how to use Apex in project
+
+Huguette:
+- Working on Challenge V
+- Completed recommended badges for Apex, which helped with challenges
+- Implementing security on project
+
+Johnny:
+- Need to finish Project 0 but has good foundation set up
+- Need to implement security, profiles/users, create one more object
+- Just needs a little practice / self-study in Apex
+
+Heejin:
+- Still working on security Trailhead
+- Needs to study Apex, so will work on Apex core Trailmix that Numair posted
