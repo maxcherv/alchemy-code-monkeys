@@ -129,7 +129,7 @@ Huguette:
 Heejin:
 - Working on security and Github Trailheads
 
-8/5
+8/5 Standup Notes
 
 Hamza:
 - Figured out stucture for project after speaking to Jared
