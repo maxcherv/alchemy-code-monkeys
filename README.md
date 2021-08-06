@@ -154,3 +154,30 @@ Johnny:
 Heejin:
 - Still working on security Trailhead
 - Needs to study Apex, so will work on Apex core Trailmix that Numair posted
+
+8/6 Standup Notes
+
+Hamza:
+- Has come up with two distinct triggers, thinking on third
+- Brainstorming how possible triggers fit into the structure of my org
+- For example, creating an object based on another object vs. lookup relationships
+
+Annabell:
+- Has got triggers she wants to do planned out
+- Has shell of trigger and handler scripts made
+- Has to write the proper code for the trigger/handler
+
+Huguette:
+- Writing triggers for project
+- Came up with two distinct triggers
+- Implementing security and triggers in project
+
+Johnny:
+- Plans to study on triggers to get better idea of use cases
+- Plans to study testing to better understand the topic
+- Struggling with lookup relationships/foreign keys, last part to get caught up
+
+Heejin:
+- Working on trigger Trailhead, Apex Trailhead
+- Brainstorming about triggers in project
+- Reviewing trigger material
