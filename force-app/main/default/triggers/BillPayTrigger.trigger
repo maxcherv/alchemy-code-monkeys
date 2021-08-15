@@ -20,5 +20,10 @@ trigger BillPayTrigger on Payment__c (after insert, after update) {
         b.Bill_Status__c = 'Paid'; 
     }   
      update billList;
+<<<<<<< Updated upstream
 }
 */
+=======
+} 
+*/ 
+>>>>>>> Stashed changes
