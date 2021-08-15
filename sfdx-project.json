@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Blackrose Games Playground",
+  "namespace": "",
+  "sfdcLoginUrl": "https://playful-otter-6ctpef-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "52.0"
+}
