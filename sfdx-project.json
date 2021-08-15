@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Scheduling Playground",
+  "namespace": "",
+  "sfdcLoginUrl": "https://mindful-bear-gahi4f-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "52.0"
+}
