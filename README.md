@@ -250,3 +250,29 @@ Huguette:
 
 Johnny:
 - Working on Trailheads for practice and Project 0 part 3
+
+
+8/17 Standup Notes
+
+Hamza:
+- Was sick yesterday, still feeling unwell, progress slower than desired
+- Determined most processes/rules for part 3
+- Need to implement them throughout the day
+
+Annabell:
+- Still has issues with part 2 of project 0
+- Skipping those parts for now and has been progressively working on part 3
+
+Huguette:
+- Still working on project 0 part 3
+- Went back through recordings to better understand flows and how to apply them to project
+
+Johnny:
+- Wrote two validation rules and tested in org
+- Set up VSCode over the weekend
+- Mostly caught up on exercises
+- Plans to implement rest of part 3 tonight
+
+Heejin:
+- Working on testing part of project 2 and 3 (workflows and flows)
+
