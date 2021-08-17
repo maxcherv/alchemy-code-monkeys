@@ -173,7 +173,7 @@ Huguette:
 - Implementing security and triggers in project
 
 Johnny:
-- Plans to study on triggers to get better idea of use cases
+- Plans to study on triggers9/ to get better idea of use cases
 - Plans to study testing to better understand the topic
 - Struggling with lookup relationships/foreign keys, last part to get caught up
 
@@ -181,3 +181,72 @@ Heejin:
 - Working on trigger Trailhead, Apex Trailhead
 - Brainstorming about triggers in project
 - Reviewing trigger material
+
+8/11 Standup Notes
+
+Hamza:
+- Finished presentation for part 2
+- Tying up loose ends in project
+
+Heejin:
+- Planning to keep working on Apex Trailhead and try to finish project
+
+Johnny:
+- Project part 2 completed, planning to work on Apex Trailheads
+- Using ideas from those exercises to come up with ideas for part 3
+- Plan to clean up org if there is time
+
+Annabell:
+- Project part 2 not completed
+- Need to finish trigger, create a testing class, and try to get both working in org
+
+Huguette:
+- Project part 2 completed
+- Falling behind on materials, will go over recordings to catch up
+
+8/12 Standup Notes
+
+Everyone's status was roughly the same as the previous day.
+Huguette caught up on content and started doing Trailhead exercises.
+
+
+
+Week 2 Retrospective
+
+What did go well:
+- Some of us were able to able to grasp concepts quickly and help others in the group
+- A lot of discussion to understand the material together even outside work hours
+
+What didn't go well:
+- Time management (what one wanted to do vs how long it would take)
+- Getting the code to work in the org after it was written
+- Felt like there wasn't a strong enough understanding of triggers
+
+What can be improved:
+- Testing in the org as you develop
+- Keeping scope in mind
+- Connecting visual studio to org for better code integration
+- Asking for help sooner rather than later
+
+
+
+8/13 Standup Notes
+
+Hamza:
+- Catching up on DEX 403 exercises
+- Reviewing material required for part 3 of Project 0
+
+Annabell:
+- Catching up on DEX 403
+- Planning on implementing workflows and processes for project
+- Need to link VSCode to org
+
+Heejin:
+- Working on project part 2 and 3 and Trailheads
+
+Huguette:
+- Working on DEX 403 exercises
+- Implementation of validation rules and workflows on project 0
+
+Johnny:
+- Working on Trailheads for practice and Project 0 part 3
