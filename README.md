@@ -281,4 +281,5 @@ Heejin:
 Johnny:
 - I plan to research meta deta api and change sets to see which tool we should use to get Huguettes org meta data for use in our own org. 
 - Things I have completed are created a Kanban board to GitHub for the project and getting a local copy of code on my machine
+- VF Basics Trailhead completed over the weekend
 
