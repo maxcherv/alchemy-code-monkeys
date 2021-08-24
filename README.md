@@ -276,3 +276,8 @@ Johnny:
 Heejin:
 - Working on testing part of project 2 and 3 (workflows and flows)
 
+8/24 Standup Notes
+Johnny:
+- I plan to research meta deta api and change sets to see which tool we should use to get Huguettes org meta data for use in our own org. 
+- Things I have completed are created a Kanban board to GitHub for the project and getting a local copy of code on my machine
+
