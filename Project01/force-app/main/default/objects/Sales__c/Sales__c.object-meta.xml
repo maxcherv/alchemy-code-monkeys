@@ -161,16 +161,6 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Sales</pluralLabel>
-    <profileSearchLayouts>
-        <fields>NAME</fields>
-        <fields>Account_Name__c</fields>
-        <fields>Sale_Date__c</fields>
-        <fields>Sales_Associate_Id__c</fields>
-        <fields>RECORDTYPE</fields>
-        <fields>Total__c</fields>
-        <fields>OWNER.FIRST_NAME</fields>
-        <profileName>System Administrator</profileName>
-    </profileSearchLayouts>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
         <searchResultsAdditionalFields>Sales_Associate_Id__c</searchResultsAdditionalFields>
