@@ -73,9 +73,16 @@
     <name>CustomNotificationType</name>
   </types>
   <types>
+   <members>Product2</members>
+  <members>OperatingHours</members>
+   <members>Account</members>
     <members>*</members>
     <name>CustomObject</name>
   </types>
+  <types>
+        <members>*</members>
+        <name>GlobalValueSet</name>
+    </types>
   <types>
     <members>*</members>
     <name>CustomSite</name>
@@ -245,5 +252,4 @@
     <name>WorkflowRule</name>
   </types>
   <version>47.0</version>
-</Package>
 </Package>
