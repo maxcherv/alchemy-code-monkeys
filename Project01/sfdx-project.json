@@ -7,6 +7,6 @@
   ],
   "name": "Project01",
   "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sfdcLoginUrl": "https://curious-fox-gsf42l-dev-ed.my.salesforce.com/",
   "sourceApiVersion": "52.0"
 }
