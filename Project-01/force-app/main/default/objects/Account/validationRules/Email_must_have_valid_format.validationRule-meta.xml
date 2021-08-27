@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_must_have_valid_format</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX( Email__c ,&apos;([a-zA-Z0-9_\\-\\.]+)@((\\[a-z]{1,3}\\.[a-z]{1,3}\\.[a-z]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})&apos;))</errorConditionFormula>
+    <errorMessage>Account Email must be in the correct format</errorMessage>
+</ValidationRule>

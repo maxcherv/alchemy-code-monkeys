@@ -1,0 +1,63 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+    <!-- Add static resources to page's <head> -->
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/bootstrap.min.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/font-awesome.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/fontawesome-stars.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/ion-fonts.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/slick.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/animate.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/jquery-ui.min.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/lightgallery.min.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/nice-select.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/timecircles.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/style.css')}"/>
+    <apex:includeScript value="{! $Resource.Assets}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/jquery-1.12.4.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/jquery-1.12.4.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/modernizr-2.8.3.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/popper.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/bootstrap.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/slick.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/countdown.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.barrating.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.counterup.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.nice-select.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.sticky-sidebar.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery-ui.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.ui.touch-punch.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/lightgallery.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/scroll-top.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/theia-sticky-sidebar.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/waypoints.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/instafeed.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.elevateZoom-3.0.8.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/timecircles.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/main.js')}"/>
+    
+
+    <apex:pageBlock title="header">
+        <apex:pageBlockSection title="nav">
+            
+    <div style="margin-left: auto; margin-right: auto; width: 50%">
+        <!-- Display images directly referenced in a static resource -->
+        <h3>Images</h3>
+        <p>A hidden message:
+            <apex:image alt="eye" title="eye"
+                url="{!URLFOR($Resource.Assets, 'assets/images/product/medium-size/1-5.jpg')}"/>
+            <apex:image alt="heart" title="heart"
+                url="{!URLFOR($Resource.Assets, 'assets/images/product/medium-size/1-6.jpg')}"/>
+            <apex:image alt="cloud" title="cloud"
+                url="{!URLFOR($Resource.Assets, 'assets/images/product/medium-size/1-7.jpg')}"/>
+        </p>
+    <!-- Display images referenced by CSS styles, all from a static resource. -->
+    <h3>Background Images on Buttons</h3>
+    <button class="ui-btn ui-shadow ui-corner-all 
+        ui-btn-icon-left ui-icon-action">action</button>
+    <button class="ui-btn ui-shadow ui-corner-all 
+        ui-btn-icon-left ui-icon-star">star</button>
+    </div>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+   
+</apex:page>

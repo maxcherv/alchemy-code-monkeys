@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>we running out of wedding band</description>
+        <name>Iventory_Low</name>
+        <label>Iventory Low</label>
+        <locationX>171</locationX>
+        <locationY>341</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>Please consider stocking up</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>hugmpudi2@gmail.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Flow </stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <interviewLabel>Weekly Inventory Check {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Weekly Inventory Check</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Iventory_Low</targetReference>
+        </connector>
+        <filters>
+            <field>Quantity__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </filters>
+        <object>ProductTJ__c</object>
+        <schedule>
+            <frequency>Weekly</frequency>
+            <startDate>2021-09-21</startDate>
+            <startTime>00:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>
