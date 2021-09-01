@@ -5,8 +5,7 @@
         <name>ApexClass</name>
     </types>
 
-    <types>
-        <members>OperatingHours</members>
+    <types
         <members>Account</members>
         <members>*</members>
         <name>CustomObject</name>
