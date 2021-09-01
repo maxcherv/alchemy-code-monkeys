@@ -156,7 +156,7 @@
     <label>Commission</label>
     <nameField>
         <displayFormat>COM-{0000}</displayFormat>
-        <label>CommisionID</label>
+        <label>Commision Name</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Commissions</pluralLabel>

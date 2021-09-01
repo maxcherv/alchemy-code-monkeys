@@ -4,6 +4,21 @@
     <active>true</active>
     <label>Gold &amp; Silver Collection</label>
     <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>New Arrival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Product_Style__c</picklist>
         <values>
             <fullName>Bangle</fullName>

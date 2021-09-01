@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>ProductListController</members>
         <name>ApexClass</name>
     </types>
 
+<<<<<<< HEAD
     <types
+=======
+    <types>
+        
+>>>>>>> 98221f19c3f3186f1d59a9524303e4587b1fe531
         <members>Account</members>
         <members>*</members>
         <name>CustomObject</name>
@@ -40,7 +45,7 @@
         <name>GlobalValueSet</name>
     </types>
 
-<!--
+
 
     <types>
         <members>*</members>
@@ -72,6 +77,6 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
-    -->
+    
     <version>52.0</version>
 </Package>
