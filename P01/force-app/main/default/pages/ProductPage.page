@@ -1,0 +1,365 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" standardController="ProductTJ__c" extensions="AddToCart">
+    
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/bootstrap.min.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/font-awesome.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/fontawesome-stars.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/ion-fonts.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/slick.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/animate.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/jquery-ui.min.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/lightgallery.min.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/nice-select.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/plugins/timecircles.css')}"/>
+    <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/style.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Fontawesome,'/font-awesome-4.7.0/css/font-awesome.css')}"/>
+    <apex:includeScript value="{! $Resource.Assets}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/jquery-1.12.4.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/jquery-1.12.4.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/modernizr-2.8.3.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/popper.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/vendor/bootstrap.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/slick.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/countdown.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.barrating.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.counterup.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.nice-select.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.sticky-sidebar.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery-ui.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.ui.touch-punch.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/lightgallery.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/scroll-top.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/theia-sticky-sidebar.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/waypoints.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/instafeed.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/jquery.elevateZoom-3.0.8.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/plugins/timecircles.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Assets,'assets/js/main.js')}"/>
+    
+    <style>
+    #product-listing {
+        text-align: center;
+        margin-top: 2%;
+    }
+    
+    div.pbSubsection {
+        margin-top: 5%;
+    }
+        
+    label {
+        margin-bottom: 0px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    
+    input {
+        margin-top: 10px;
+    }
+    </style>
+    
+    <body class="template-color-3">
+        
+        <div class="main-wrapper">
+            
+            <header class="header-main_area header-main_area-3">
+                <div class="header-top_area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="ht-left_area">
+                                    <div class="welcome_text">
+                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ht-right_area">
+                                    <div class="ht-menu">
+                                        <ul>
+                                            <li><a href="javascript:void(0)">Currency<i class="fa fa-chevron-down"></i></a>
+                                                <ul class="ht-dropdown ht-currency">
+                                                    <li><a href="javascript:void(0)">€ EUR</a></li>
+                                                    <li class="active"><a href="javascript:void(0)">£ Pound Sterling</a></li>
+                                                    <li><a href="javascript:void(0)">$ Us Dollar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="javascript:void(0)">Language <i class="fa fa-chevron-down"></i></a>
+                                                <ul class="ht-dropdown">
+                                                    <li class="active">
+                                                        <a href="javascript:void(0)">
+                                                            <apex:image alt="english" title="english" url="{!URLFOR($Resource.Assets, 'assets/images/menu/icon/1.jpg')}"/>
+                                                            English
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)">
+                                                        <apex:image alt="Francais" title="Francais" url="{!URLFOR($Resource.Assets, 'assets/images/menu/icon/2.jpg')}"/>
+                                                        Français</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">My Account<i class="fa fa-chevron-down"></i></a>
+                                                <ul class="ht-dropdown ht-my_account">
+                                                    <li><a href="javascript:void(0)">Register</a></li>
+                                                    <li class="active"><a href="javascript:void(0)">Login</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-middle_area d-none d-lg-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="header-middle_wrap">
+                                    <div class="header-contact_area">
+                                        <div class="contact-box">
+                                            <span>Location</span>
+                                            <p>Street 12345 – USA</p>
+                                        </div>
+                                        <div class="contact-box">
+                                            <span>Location</span>
+                                            <p>Street 12345 – USA</p>
+                                        </div>
+                                    </div>
+                                    <div class="header-logo">
+                                        <a href="index.html">
+                                            TJ Jewelry's Header Logo
+                                        </a>
+                                    </div>
+                                    <div class="header-right_area">
+                                        <ul>
+                                            <li>
+                                                <a href="wishlist.html" class="wishlist-btn">
+                                                    <i class="fa fa-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#searchBar" class="search-btn toolbar-btn">
+                                                    <i class="fa fa-search"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn color--white d-lg-none d-block">
+                                                    <i class="ion-navicon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#miniCart" class="minicart-btn toolbar-btn">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom_area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 d-lg-none d-block">
+                                <div class="header-logo">
+                                    <a href="#">
+                                        TJ Jewelry's Header Logo
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 d-none d-lg-flex justify-content-center position-static">
+                                <div class="main-menu_area">
+                                    <nav>
+                                        <ul>
+                                            <li class="dropdown-holder"><a href="#">Home</a></li>
+                                            <li class="megamenu-holder"><a href="#">Shop</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">Jewelry</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom_area header-bottom_area-2 header-sticky stick white--color">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        TJ Jewelry's Header Logo
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 d-none d-lg-block position-static">
+                                <div class="main-menu_area">
+                                    <nav>
+                                        <ul>
+                                            <li class="dropdown-holder"><a href="#">Home</a></li>
+                                            <li class="megamenu-holder"><a href="#">Shop</a></li>
+                         
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-8 col-sm-8">
+                                <div class="header-right_area">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="wishlist-btn">
+                                                <i class="fa fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#searchBar" class="search-btn toolbar-btn">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn color--white d-lg-none d-block">
+                                                <i class="ion-navicon"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#miniCart" class="minicart-btn toolbar-btn">
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu_wrapper" id="mobileMenu">
+                    <div class="offcanvas-menu-inner">
+                        <div class="container">
+                            <a href="#" class="btn-close"><i class="fa fa-window-close"></i></a>
+                            <div class="offcanvas-inner_search">
+                                <form action="#" class="hm-searchbox">
+                                    <input type="text" placeholder="Search for item..."/>
+                                    <button class="search_btn" type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <nav class="offcanvas-navigation">
+                                <ul class="mobile-menu">
+                                    <li class="menu-item-has-children active"><a href="#"><span class="mm-text">Home</span></a>
+                             
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            <span class="mm-text">Shop</span>
+                                        </a>
+                     
+                                 
+                                    </li>
+                        
+                            
+                                </ul>
+                            </nav>
+                            <nav class="offcanvas-navigation user-setting_area">
+                                <ul class="mobile-menu">
+                                    <li class="menu-item-has-children active">
+                                        <a href="#">
+                                            <span class="mm-text">User
+                                            Setting
+                                        </span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="my-account.html">
+                                                    <span class="mm-text">My Account</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="login-register.html">
+                                                    <span class="mm-text">Login | Register</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#"><span class="mm-text">Currency</span></a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="mm-text">EUR €</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="mm-text">USD $</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#"><span class="mm-text">Language</span></a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="mm-text">English</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="mm-text">Français</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="mm-text">Romanian</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="mm-text">Japanese</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+        <div id="product-listing" class="container">
+            <apex:form >
+                <apex:pageBlock >
+                    
+                    <h3>
+                        <apex:outputText value="{!ProductTJ__c.Description__c}"/>
+                    </h3>
+                    
+                    <apex:variable var="imageVar" value="{!ProductTJ__c.Image__c}"/>
+                    
+                    <div class="pull-left">
+                        <apex:image alt="TJ's Product Image"  title="TJ's Product Image" url="{!URLFOR($Resource.Assets, imageVar)}"/>
+                    </div>
+                    
+                    <div id="right-section">
+                    
+                    <apex:pageBlockSection >
+                        <apex:outputText value="{!ProductTJ__c.Name}"/>
+                        <apex:outputText value="{!ProductTJ__c.Product_Type__c}"/>
+                        <apex:outputText value="{!ProductTJ__c.Product_Style__c}"/>
+                        <apex:outputText value="{!ProductTJ__c.Carat__c}"/>
+                        <apex:outputText value="{!ProductTJ__c.Retail_Price1__c}"/>
+                        <apex:outputText value="{!ProductTJ__c.Quantity__c}"/>
+                    </apex:pageBlockSection>
+                    
+                    <apex:commandButton action="{!addCartItem}" value="Add to Cart"/>
+                    <apex:messages />
+                    </div>
+                </apex:pageBlock>
+            </apex:form>           
+        </div>
+    </body>
+</apex:page>
