@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>ProductListController</members>
         <name>ApexClass</name>
     </types>
-
+<!--
     <types>
-        <members>Account</members>
+        
         <members>*</members>
         <name>CustomObject</name>
     </types>
@@ -36,7 +36,7 @@
         <name>LightningComponentBundle</name>
     </types>
 
-<!--
+
 
     <types>
         <members>*</members>
