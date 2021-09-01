@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Blue</fullName>
+        <default>false</default>
+        <label>Blue</label>
+    </customValue>
+    <customValue>
+        <fullName>Green</fullName>
+        <default>false</default>
+        <label>Green</label>
+    </customValue>
+    <customValue>
+        <fullName>Orange</fullName>
+        <default>false</default>
+        <label>Orange</label>
+    </customValue>
+    <customValue>
+        <fullName>Pink</fullName>
+        <default>false</default>
+        <label>Pink</label>
+    </customValue>
+    <customValue>
+        <fullName>Teal</fullName>
+        <default>false</default>
+        <label>Teal</label>
+    </customValue>
+    <customValue>
+        <fullName>White</fullName>
+        <default>false</default>
+        <label>White</label>
+    </customValue>
+    <customValue>
+        <fullName>Yellow</fullName>
+        <default>false</default>
+        <label>Yellow</label>
+    </customValue>
+    <masterLabel>Color Code Tag</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

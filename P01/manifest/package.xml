@@ -6,6 +6,7 @@
     </types>
 
     <types>
+        <members>OperatingHours</members>
         <members>Account</members>
         <members>*</members>
         <name>CustomObject</name>
@@ -34,6 +35,10 @@
     <types>
         <members>*</members>
         <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GlobalValueSet</name>
     </types>
 
 <!--
