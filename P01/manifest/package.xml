@@ -4,7 +4,7 @@
         <members>ProductListController</members>
         <name>ApexClass</name>
     </types>
-<!--
+
     <types>
         
         <members>*</members>
@@ -68,6 +68,6 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
-    -->
+    
     <version>52.0</version>
 </Package>
