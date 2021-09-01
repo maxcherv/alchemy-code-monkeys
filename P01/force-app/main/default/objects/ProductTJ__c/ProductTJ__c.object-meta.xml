@@ -162,10 +162,22 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>T&amp;J Products</pluralLabel>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>Product_Style__c</fields>
+        <fields>Product_Type__c</fields>
+        <fields>Description__c</fields>
+        <fields>Quantity__c</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
         <searchResultsAdditionalFields>Carat__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Quantity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Style__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Retail_Price1__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
