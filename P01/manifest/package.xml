@@ -5,12 +5,7 @@
         <name>ApexClass</name>
     </types>
 
-<<<<<<< HEAD
-    <types
-=======
     <types>
-        
->>>>>>> 98221f19c3f3186f1d59a9524303e4587b1fe531
         <members>Account</members>
         <members>*</members>
         <name>CustomObject</name>
