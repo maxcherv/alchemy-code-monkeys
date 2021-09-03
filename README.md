@@ -283,3 +283,71 @@ Johnny:
 - Things I have completed are created a Kanban board to GitHub for the project and getting a local copy of code on my machine
 - VF Basics Trailhead completed over the weekend
 
+8/25 Standup Notes
+
+Hamza: 
+- I've been researching the ANT migration tool as a way to deploy metadata from Huguette's project to a new org, and will continue trying to figure that out. Other than that I'm hoping to get an idea of what VF page to work on today.
+(Just doing my standup early)
+
+Johnny: 
+- Hoping to get meta data from Huguettes org to new org. Once this is done I want to at least start development
+
+Heejin:
+- Do some research on metadata, and work on visualforce trailhead for our  project
+
+8/26 Standup Notes
+
+Huguette: 
+- I found an idea for my VF page. I think I will do The Homepage if no one else is doing it. here is the link to the template I'm inspiring on :https://demo.hasthemes.com/hiraola-preview/hiraola/index-3.html Also I pushed Hopefully all the metadata you guys need for your Org (#early stand-up)
+
+8/27 Standup Notes
+
+Annabell:
+- I have an idea of what page I want to design, and I'm waiting for the github stuff to be fixed. I also want to review some trailheads or videos of what we need to do on my own time so that I'm 100% familiar with what I need to do
+
+Heejin:
+- I will continue working on visualforce trailhead, and also go back to the recordings to do some vf review
+
+8/30 Standup Notes
+
+Annabell:
+- Getting page and custom controller up and going, going to try and go with a page block section item format rather than a table (might change that later if it doesnt do very well
+
+8/31 Standup Notes
+
+Annabell:
+- I have my page operational now, I just want to get the query to also grab the product description linked to the sale and see if I can reformat it to be something better than a simple table
+
+Hamza:
+- I started and completed most of my Visualforce page. I will wrap it up today and look into getting this experience site set up.
+
+Hugutte:
+- worked on VF homepage with style and pictures. I added a couple field on t&J products object. planning on wrapping up later today
+
+Heejin:
+- Will work on styling for my page, and will also look into experience cloud for the project
+
+Johnny: 
+- I have most of my VF page configured just want to implement some final touches, I still need to test the apex code for the page and add styling, I want to continue researching the experience cloud site and aid the team in its creation.
+
+9/2 Standup Notes
+
+Annabell:
+- I got my page and files finally pushed to my branch yesterday, on standby for the project stuff today
+
+Johnny: 
+- No new progress I want to write tests for my page by the end of today and aid the team in getting the source org deployable to a new org for the next team
+
+Hamza: 
+- Didn't do much of anything yesterday, but today I fixed the deployment issues that came up during the presentation. I feel kind of silly that it was such an easy fix because if I wasn't on the spot I could have just fixed it during the presentation lol. Anyway those changes are pushed to main
+
+9/3 Standup Notes
+
+Annabell:
+- doing my best to communicate with the other team, gave them the github link. going to be ramming into those cert practice tests over the weekend when I have time. otherwise on standby.
+
+Johnny: 
+- I would like to give them my page with a test so I am going to see if I can get a 1 on 1 with Caroline to get help and finish it today. I plan to study for certifications like most people and work aura trailheads to be ready to work on p2 when the time comes
+
+Heejin:
+- Will also be studying for certification, finish admin trailhead, and work on aura trail
