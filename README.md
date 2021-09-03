@@ -348,3 +348,6 @@ Annabell:
 
 Johnny: 
 - I would like to give them my page with a test so I am going to see if I can get a 1 on 1 with Caroline to get help and finish it today. I plan to study for certifications like most people and work aura trailheads to be ready to work on p2 when the time comes
+
+Heejin:
+- Will also be studying for certification, finish admin trailhead, and work on aura trail
