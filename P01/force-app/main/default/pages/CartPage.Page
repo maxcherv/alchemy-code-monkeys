@@ -1,4 +1,4 @@
-<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="CartItemController">
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="CartItemController"> 
     
     <!-- Add static resources to page's <head> -->
     <apex:stylesheet value="{! URLFOR($Resource.Assets,'assets/css/vendor/bootstrap.min.css')}"/>
@@ -547,7 +547,7 @@
    
 
  </body>
-   
+
    
    
 </apex:page>
