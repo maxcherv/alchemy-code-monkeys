@@ -351,3 +351,10 @@ Johnny:
 
 Heejin:
 - Will also be studying for certification, finish admin trailhead, and work on aura trail
+
+Hamza:
+- My stand up is pretty much that, I've got my hands full with my certification
+And will be catching up on material during the weekend
+
+Huguette: 
+- Will be studying for cert.
