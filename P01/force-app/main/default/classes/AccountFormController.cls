@@ -1,22 +1,25 @@
-public with sharing class AccountFormController {
-    public Account accRecord {get;set;}
-    // define the acc variables that are being inserted 
-    // expresson syntax 
-	// <apex:inputField value="{!acc.Name}" />
-	
+public class AccountFormController {
+    // So user cannot edit Account
+    private final Account acct;
+    
+    // The extension constructor initializes the private member
+    // variable acct by using the getRecord method from the standard
+    // controller.
+    
+    // Must make this instantiation public to be seen by form
     public AccountFormController(ApexPages.StandardController stdController) {
-        this.accRecord = (Account)stdController.getRecord();
+        this.acct = (Account)stdController.getRecord();
     }
-
+    
+    // Fixes crash
     public PageReference save() {
         try {
-            upsert accRecord;
+            upsert acct;
             
             ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Record submited successfully'));
-    
-            accRecord = new Account(); 
+            
             return null; 
-    	} catch(System.DMLException e) {
+        } catch(System.DMLException e) {
             //ApexPages.addMessages(e);
             ApexPages.addmessage(new ApexPages.message(ApexPages.severity.ERROR,'Please enter Account Name'));
             return null;

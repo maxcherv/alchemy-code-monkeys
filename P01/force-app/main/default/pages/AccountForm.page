@@ -16,13 +16,13 @@
                 <apex:pageBlockSection columns="1">
                     <!-- html-placeholder allows you to place text in input box that disappears as user types -->
                     <apex:inputField html-placeholder="Enter First and Last Name" value="{!Account.Name}"/>
-                    <apex:inputField value="{!accRecord.Email__c}"/>
-                    <apex:inputField value="{!accRecord.Phone}"/>
-                    <apex:inputField value="{!accRecord.ShippingStreet}"/>
-                    <apex:inputField value="{!accRecord.ShippingCity}"/>
-                    <apex:inputField value="{!accRecord.ShippingState}"/>
-                    <apex:inputField value="{!accRecord.ShippingPostalCode}"/>
-                    <apex:inputField value="{!accRecord.ShippingCountry}"/>
+                    <apex:inputField value="{!Account.Email__c}"/>
+                    <apex:inputField value="{!Account.Phone}"/>
+                    <apex:inputField value="{!Account.ShippingStreet}"/>
+                    <apex:inputField value="{!Account.ShippingCity}"/>
+                    <apex:inputField value="{!Account.ShippingState}"/>
+                    <apex:inputField value="{!Account.ShippingPostalCode}"/>
+                    <apex:inputField value="{!Account.ShippingCountry}"/>
                 </apex:pageBlockSection>       
             </apex:pageBlock>
         </apex:form>
