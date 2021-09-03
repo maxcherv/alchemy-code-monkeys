@@ -9,7 +9,6 @@
     </types>
 
     <types>
-        
         <members>Account</members>
         <members>*</members>
         <name>CustomObject</name>
