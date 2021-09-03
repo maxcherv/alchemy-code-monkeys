@@ -347,7 +347,7 @@ Annabell:
 - doing my best to communicate with the other team, gave them the github link. going to be ramming into those cert practice tests over the weekend when I have time. otherwise on standby.
 
 Johnny: 
-- I would like to give them my page with a test so I am going to see if I can get a 1 on 1 with Caroline to get help and finish it today. I plan to study for certifications like most people and work aura trailheads to be ready to work on p2 when the time comes. Merge branch into main and moving on to P2 instead of going back to fix things for the last project
+- I would like to give them my page with a test so I am going to see if I can get a 1 on 1 with Caroline to get help and finish it today. I plan to study for certifications like most people and work aura trailheads to be ready to work on p2 when the time comes. Merge branch into main and moving on to P2 instead of going back to fix things for the last project. Created Kanban for P2 and updated groups standups today
 
 Heejin:
 - Will also be studying for certification, finish admin trailhead, and work on aura trail
