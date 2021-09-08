@@ -339,7 +339,7 @@ Johnny:
 - No new progress I want to write tests for my page by the end of today and aid the team in getting the source org deployable to a new org for the next team
 
 Hamza: 
-- Didn't do much of anything yesterday, but today I fixed the deployment issues that came up during the presentation. I feel kind of silly that it was such an easy fix because if I wasn't on the spot I could have just fixed it during the presentation lol. Anyway those changes are pushed to main
+- Didn't do much of anything yesterday, but today I fixed the deployment issues that came up during the presentation. I feel kind of silly that it was such an easy fix because if I wasn't on the spot I could have just fixed it during the presentation. Anyway those changes are pushed to main
 
 9/3 Standup Notes
 
@@ -353,8 +353,22 @@ Heejin:
 - Will also be studying for certification, finish admin trailhead, and work on aura trail
 
 Hamza:
-- My stand up is pretty much that, I've got my hands full with my certification
-And will be catching up on material during the weekend
+- I've got my hands full with my certification and will be catching up on material during the weekend
 
 Huguette: 
-- Will be studying for cert.
+- Will be studying for cert
+
+9/8 Standup Notes
+
+Annabell:
+- Working on portfolio, then will chip away at super badge
+- Studying for certification tomorrow
+
+Johnny:
+- Focusing on certification today and tomorrow
+- Then will focus on super badge due Monday
+- Next week will be dedicated to P2 once comfortable with aura
+
+Heejin:
+- Studying for certification
+- Working on super badge over the weekend
