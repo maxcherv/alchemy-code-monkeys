@@ -372,3 +372,7 @@ Johnny:
 Heejin:
 - Studying for certification
 - Working on super badge over the weekend
+
+Hamza:
+- Passed certification! Working on super badge today
+- Will probably take care of portfolio tomorrow
