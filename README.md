@@ -388,3 +388,7 @@ Heejin:
 - Have been studying for certification exam today
 - Working super badge this weekend
 - Working on portfolio tomorrow
+
+Hamza:
+- Have been working on super badge
+- Will be working on super badge and portfolio between today and tomorrow
