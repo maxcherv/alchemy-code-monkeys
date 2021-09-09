@@ -376,3 +376,15 @@ Heejin:
 Hamza:
 - Passed certification! Working on super badge today
 - Will probably take care of portfolio tomorrow
+
+9/9
+
+Annabell:
+- Have been doing practice tests for certification exam today
+- Got portfolio started and is working on it
+- Haven't started super badge yet
+
+Heejin:
+- Have been studying for certification exam today
+- Working super badge this weekend
+- Working on portfolio tomorrow
