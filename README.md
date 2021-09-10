@@ -392,3 +392,28 @@ Heejin:
 Hamza:
 - Have been working on super badge
 - Will be working on super badge and portfolio between today and tomorrow
+
+9/10
+
+Annabell:
+- Passed certification yesterday
+- Going to work on portfolio today, followed by super badge
+
+Huguette:
+- Passed certification yesterday
+- Will work on on portfolio today
+
+Heejin:
+- Working on aura super badge
+- Will be working on portfolio as well
+- Will be rescheduling certification for next week
+
+Johnny:
+- Worked on portfolio yesterday after exam, just needs to finish About Me
+- Working on aura super badge and will look into project stuff
+- Will reschedule certification for next week
+
+Hamza:
+- Working on portfolio today
+- Rest of my time today and this weekend goes towards the super badge
+- Any extra time will be put into the project
