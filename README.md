@@ -48,7 +48,7 @@ List of features ready and TODOs for future development
     - Page Layout
 
 To-do list:
-  - Experience Cloud Site
+  -  Visualforce Experience Cloud Site
   
 # Getting Started
 
