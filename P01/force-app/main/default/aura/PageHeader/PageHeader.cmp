@@ -61,12 +61,12 @@
                                         <ul class="ht-dropdown">
                                             <li class="active">
                                                 <a href="javascript:void(0)">
-                                                    <img alt="english" title="english" url="{!$Resource.Assets + '/assets/images/menu/icon/1.jpg'}"/>
+                                                    <img alt="english" title="english" src="{!$Resource.Assets + '/assets/images/menu/icon/1.jpg'}"/>
                                                     English
                                                 </a>
                                             </li>
                                             <li><a href="javascript:void(0)">
-                                                <img alt="Francais" title="Francais" url="{!$Resource.Assets + '/assets/images/menu/icon/2.jpg'}"/>
+                                                <img alt="Francais" title="Francais" src="{!$Resource.Assets + '/assets/images/menu/icon/2.jpg'}"/>
                                                 Français</a>
                                             </li>
                                         </ul>
