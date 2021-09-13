@@ -250,7 +250,8 @@
                         <ul class="minicart-list">
                             <li class="minicart-product">
                                 <a class="product-item_remove" href="javascript:void(0)">
-<i class="far fa-window-close"></i></a>
+                                    <i class="far fa-window-close"></i>
+                                </a>
                                 <div class="product-item_img">
                                     <apex:image alt="TJ's Product Image" title="TJ's Product Image" url="{!URLFOR($Resource.Assets, 'assets/images/product/small-size/2-1.jpg')}"/>
                                 </div>
@@ -536,7 +537,10 @@
                         
                         
                         
-                    </div></div> </div></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
          
          
          
