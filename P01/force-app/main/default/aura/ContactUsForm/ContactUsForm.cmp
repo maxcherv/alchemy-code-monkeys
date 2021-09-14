@@ -1,10 +1,11 @@
-<aura:component>
+<aura:component controller="contactUsForm">
 
     <aura:attribute name="firstName" type="String" default="" />
     <aura:attribute name="lastName" type="String" default="" />
     <aura:attribute name="email" type="String" default="" />
     <aura:attribute name="subject" type="String" default="" />
     <aura:attribute name="message" type="String" default="" />
+    <aura:attribute name="availableUsers" type="List" default="[]" />
 
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}"/>
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}"/>

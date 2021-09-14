@@ -1,5 +1,6 @@
-public with sharing class emailSender {
+public with sharing class contactUsForm {
     
+    @AuraEnabled
     public static Boolean emailMaker(String mySubject, String myBody, String toAddress){
 
         Boolean emailSendSuccess = false;
@@ -27,6 +28,7 @@ public with sharing class emailSender {
         return emailSendSuccess;
     }
 
+    @AuraEnabled
     public static List<User> getAvailableUsers(){
 
         List<User> availableUsers = new List<User>();
