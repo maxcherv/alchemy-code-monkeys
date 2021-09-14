@@ -1,0 +1,49 @@
+<aura:component controller="AccountController"  implements="flexipage:availableForAllPageTypes" access="global" >
+
+    <aura:attribute name="Acc" type="Account" default="{'Name': '',
+            'Email':'',
+            'Phone':'',
+            'ShippingStreet':'',
+            'ShippingCity':'',
+            'ShippingState':'',
+            'ShippingPostalCode':'',
+            'ShippingCountry':'' }"/>
+    <aura:attribute name="success" type="boolean"/>
+    <aura:attribute name="fail" type="boolean" />
+    <lightning:card title="New Account">
+    	 <form class="slds-form_stacked">
+        <div class="slds-p-around_medium">
+                <lightning:input type="text" aura:id="Username" class="input" label="Username" 
+                                 value="{!v.Acc.Name}" required="true"/>
+                <lightning:input type="String" aura:id="Email" class="input" label="E-Mail Address"
+                                 value="{!v.Acc.Email__c}" required="true"/>
+                <lightning:input type="phone" aura:id="Phone" class="input" label="Phone Number" 
+                                 value="{!v.Acc.Phone}" required="true"/>
+                <lightning:input aura:id="Street" class="input" label="Street Address"
+                                 value="{!v.Acc.ShippingStreet}" />
+                <lightning:input aura:id="City" label="City" 
+                                 value="{!v.Acc.ShippingCity}" class="input"/>
+                <lightning:input aura:id="State" label="State" 
+                                 value="{!v.Acc.ShippingState}" class="input"/>
+                <lightning:input aura:id="ZipCode" label="Zip Code" 
+                                 value="{!v.Acc.ShippingPostalCode}" class="input"/>
+                <lightning:input aura:id="Country" label="Country" 
+                                 value="{!v.Acc.ShippingCountry}" class="input"/>
+                <lightning:button label="Create Account"  class="slds-m-top_medium"
+                              variant="brand"
+                              onclick="{!c.createAccount}"/>
+            </div>
+        </form>
+          <aura:if isTrue="{!v.success}">
+    	<div>
+            Account has successfully been inserted.
+    	</div>
+        </aura:if>
+          <aura:if isTrue="{!v.fail}">
+    	 <div class="slds-p-around_medium">
+           Error: Unable to insert Account. Double check your input. 
+              </div>  
+	</aura:if>
+    </lightning:card>
+      
+</aura:component>
