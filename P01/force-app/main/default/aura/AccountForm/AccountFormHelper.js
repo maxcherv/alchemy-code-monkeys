@@ -8,7 +8,16 @@
                 if(response.getState()==="SUCCESS")
                 {
                     console.log("Account has been successfully inserted");
-                 	
+                 	component.set("v.Acc",{
+                         'Name': '',
+            'Email':'',
+            'Phone':'',
+            'ShippingStreet':'',
+            'ShippingCity':'',
+            'ShippingState':'',
+            'ShippingPostalCode':'',
+            'ShippingCountry':''  });
+
                     component.set("v.success",true);
         	}	
             else if (response.getState() === "ERROR"){
