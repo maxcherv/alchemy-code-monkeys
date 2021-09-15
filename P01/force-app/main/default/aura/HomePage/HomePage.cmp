@@ -1,0 +1,144 @@
+<aura:component>
+	<c:PageHeader />
+    <lightning:input type="text" label="We are farmers dum da dum da dum dum duh" />
+
+    <!-- For T&j products Slide Item Area -->
+    <aura:attribute name="prodItems" type="List"/> 
+    
+    
+    <ltng:require scripts="{!$Resource.Assets}"/>
+    <body class="template-color-3">
+        <div class="hiraola-slider_area-2 hiraola-slider_area-3 color-white">
+            <div class="main-slider">
+                <!-- Begin Single Slide Area -->
+                <div class="single-slide animation-style-01 bg-6">
+                    <div class="container">
+                        <div class="slider-content slider-content-2">
+                            <h5><span>Black Friday</span> This Week</h5>
+                            <h2>Fabulous Necklaces</h2>
+                            <h3>Marine Corp Exchange</h3>
+                            <h4> <span>$1599.00</span></h4>
+                            <div class="hiraola-btn-ps_center slide-btn">
+                                <a class="hiraola-btn" href="ProductPage?id=a0C5e000001pWp3EAE">Shopping Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Single Slide Area End Here -->
+                <!-- Begin Single Slide Area -->
+    
+                <!-- Single Slide Area End Here -->
+            </div>
+        </div>
+          <!-- banner area-->
+           
+                <div class="hiraola-banner_area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-item img-hover_effect">
+                            <a href="ProductPage?id=a0C5e000001pX1cEAE">
+                                <img alt="TJ's Product Image" title="TJ's Product Image" src="{!$Resource.Assets + '/assets/images/banner/3_1.jpg'}"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-item img-hover_effect">
+                            <a href="ProductPage?id=a0C5e000001pWoyEAE">
+                                <img alt="TJ's Product Image" title="TJ's Product Image" src="{!$Resource.Assets + '/assets/images/banner/3_2.jpg'}"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-item img-hover_effect">
+                            <a href="ProductPage?id=a0C5e000001pX2gEAE">
+                                <img alt="TJ's Product Image" title="TJ's Product Image" src="{!$Resource.Assets + '/assets/images/banner/3_3.jpg'}"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Begin T&J's Product Area -->
+          <div class="hiraola-product_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hiraola-section_title">
+                            <h4>New Arrival</h4>
+                        </div>
+                    </div>
+    
+           <!-- products-->
+           
+                    <div class="col-lg-12">
+                        <div class="hiraola-product_slider slick-initialized slick-slider">
+                            <button class="slick-prev slick-arrow" style="display: block;"><i class="fa fa-chevron-left"></i></button>
+                       <div class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 4788px; transform: translate3d(-1140px, 0px, 0px);">
+
+                            <!-- Begin T&j products Slide Item Area -->
+                            <!--<apex:repeat value="{!products}" var="pro"></apex:repeat>-->
+                                <!--<apex:variable var="imageVar" value="{!pro.Image__c}"/> -->
+                                <aura:iteration items="{!products}" var="pro">
+                                    <aura:attribute name="imageVar" type="{}" />
+                                    <div class="slide-item slick-slide slick-cloned" style="width: 198px;" >
+                                        <!--new arrival products-->
+                                        <div class="single_product" >
+                                            <div class="product-img" >
+                                                
+                                              <!--  <a href="ProductPage?id={!pro.Id}" >
+                                                    <img alt="TJ's Product Image"  title="TJ's Product Image" src="{!$Resource.Assets + 'v.imageVar'}"/>
+                                                </a>
+                                                -->
+                                                <span class="sticker">New</span>
+                                                <div class="add-actions">
+                                                    <ul>
+                                                        <li><a class="hiraola-add_cart" href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                        <li><a class="hiraola-add_compare" href="#" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i class="fa fa-random"></i></a></li>
+                                                        <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hiraola-product_content">
+                                                <div class="product-desc_info">
+                                                   <!--<h6><a class="product-name" href="ProductPage?id={!pro.Id}"><apex:outputField value="{!pro.Description__c}"/></a></h6>--> 
+                                                    <div class="price-box">
+                                                        <!--<span class="new-price"><apex:outputField value="{!pro.Retail_Price1__c}"/></span> -->
+                                                    </div>
+                                                    <div class="additional-add_action">
+                                                        <ul>
+                                                            <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="rating-box">
+                                                        <ul>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li class="silver-color"><i class="fa fa-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aura:iteration>
+                             
+                  <!--</apex:repeat>-->
+                            </div>
+                            </div><button class="slick-next slick-arrow" style="display: block;"><i class="fa fa-chevron-right"></i></button>
+                        </div>
+           </div>
+              </div>
+            </div>
+         </div>
+
+
+    </body>
+    
+</aura:component>
