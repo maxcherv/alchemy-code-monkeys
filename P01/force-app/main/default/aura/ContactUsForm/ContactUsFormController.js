@@ -1,7 +1,7 @@
 ({
     initPage : function(component, event, helper) {
 
-        helper.helpInitPage();
+        helper.helpInitPage(component, event, helper);
 
     },
 

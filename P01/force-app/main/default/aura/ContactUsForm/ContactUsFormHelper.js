@@ -1,5 +1,5 @@
 ({
-    helpInitPage : function() {
+    helpInitPage : function(component, event, helper) {
 
         let getUsers = component.get("c.getAvailableUsers");
 
@@ -7,7 +7,8 @@
 
             if(response.getState() === "SUCCESS"){
 
-                component.set("v.availableUsers", response.getValue());
+                component.set("v.availableUsers", response.getReturnValue());
+                console.log(response.getReturnValue());
 
             }else{
                 console.log("There was an error with communicating with the sever");

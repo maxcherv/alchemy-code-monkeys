@@ -34,7 +34,11 @@ public with sharing class ContactUsFormController {
         List<User> availableUsers = new List<User>();
         String availableProfile = 'System Administrator';
 
-        availableUsers = [SELECT name, SenderEmail FROM User WHERE IsActive=true AND Profile.name=:availableProfile];
+        Profile profileId = [SELECT id FROM Profile WHERE name=:availableProfile LIMIT 1];
+        system.debug(profileId);
+
+        availableUsers = [SELECT name, SenderEmail FROM User WHERE ProfileId=:profileId.id];
+        System.debug(availableUsers);
         return availableUsers;
 
     }

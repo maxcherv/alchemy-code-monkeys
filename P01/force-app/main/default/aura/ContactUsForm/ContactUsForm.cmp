@@ -7,6 +7,8 @@
     <aura:attribute name="message" type="String" default="" />
     <aura:attribute name="availableUsers" type="List" default="[]" />
 
+    <aura:handler name="init" value="{!this}" action="{!c.initPage}"/>
+
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}"/>
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}"/>
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/fontawesome-stars.css'}"/>
