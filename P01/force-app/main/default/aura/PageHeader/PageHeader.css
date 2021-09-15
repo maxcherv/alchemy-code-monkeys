@@ -1,0 +1,12 @@
+.THIS.bg-6 {
+    background-image: url("{!$Resource.Assets + '/assets/images/slider/6.jpg'}");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 825px;
+}
+/* May need to add the following:
+#p-img{
+    width:60px;
+    }
+*/

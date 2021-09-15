@@ -1,0 +1,76 @@
+<aura:component controller="ContactUsFormController">
+
+    <aura:attribute name="firstName" type="String" default="" />
+    <aura:attribute name="lastName" type="String" default="" />
+    <aura:attribute name="email" type="String" default="" />
+    <aura:attribute name="subject" type="String" default="" />
+    <aura:attribute name="message" type="String" default="" />
+    <aura:attribute name="availableUsers" type="List" default="[]" />
+
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/fontawesome-stars.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/ion-fonts.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/slick.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/animate.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/jquery-ui.min.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/lightgallery.min.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/nice-select.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/timecircles.css'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/style.css'}"/>
+	<ltng:require styles="{!$Resource.Fontawesome + '/font-awesome-4.7.0/css/font-awesome.css'}"/>
+    <ltng:require scripts="{!$Resource.Assets}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/modernizr-2.8.3.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/popper.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/bootstrap.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/slick.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/countdown.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.barrating.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.counterup.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.nice-select.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.sticky-sidebar.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery-ui.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.ui.touch-punch.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/lightgallery.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/scroll-top.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/theia-sticky-sidebar.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/waypoints.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/instafeed.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.elevateZoom-3.0.8.min.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/timecircles.js'}"/>
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}"/>
+
+    <c:PageHeader />
+
+    <div class="slds-grid slds-gutters slds-grid_align-center">
+        <div class="slds-col slds-size_4-of-12">
+            <lightning:input type="String" value="{!v.firstName}" label="First Name:" style="font-weight: bold;"/>
+        </div>
+        <div class="slds-col slds-size_4-of-12">
+            <lightning:input type="String" value="{!v.lastName}" label="Last Name:" style="font-weight: bold;"/>
+        </div>
+    </div>
+    <div class="slds-grid slds-gutters slds-grid_align-center">
+        <div class="slds-col slds-size_8-of-12">
+            <lightning:input type="String" value="{!v.email}" label="Email:" style="font-weight: bold;"/>
+        </div>
+    </div>
+    <div class="slds-grid slds-gutters slds-grid_align-space" >
+        <div class="slds-col slds-size_8-of-12">
+            <lightning:input type="String" value="{!v.subject}" label="Subject:" style="font-weight: bold;" />
+        </div>
+    </div>
+    <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical slds-grid_vertical-align-center">
+        <div class="slds-col slds-grid_vertical slds-grid_vertical-align-center slds-size_8-of-12">
+            <label for="message" style="font-size: 12px; font-weight: bold;">Your message:</label>
+            <textarea id="message" class="slds-textarea" />
+            <lightning:fileUpload label="Optional images" name="images" multiple="true" style="font-weight: bold;" />
+        </div>
+    </div>
+
+    <div class="slds-clearfix">
+        <lightning:button label="Submit" title="Test" onClick="{!c.sendEmail}" class="slds-align_absolute-center" />
+    </div>
+</aura:component>
