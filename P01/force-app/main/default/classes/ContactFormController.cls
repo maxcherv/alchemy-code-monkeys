@@ -1,4 +1,4 @@
-public with sharing class contactUsForm {
+public with sharing class ContactFormController {
     
     @AuraEnabled
     public static Boolean emailMaker(String mySubject, String myBody, String toAddress){

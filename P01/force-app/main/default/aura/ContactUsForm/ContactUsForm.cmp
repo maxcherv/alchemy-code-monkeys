@@ -1,4 +1,4 @@
-<aura:component controller="contactUsForm">
+<aura:component controller="ContactUsFormController">
 
     <aura:attribute name="firstName" type="String" default="" />
     <aura:attribute name="lastName" type="String" default="" />
@@ -69,4 +69,8 @@
             <lightning:fileUpload label="Optional images" name="images" multiple="true" style="font-weight: bold;" />
         </div>
     </div>
-</aura:component>	
+
+    <div class="slds-clearfix">
+        <lightning:button label="Submit" title="Test" onClick="{!c.sendEmail}" class="slds-align_absolute-center" />
+    </div>
+</aura:component>
