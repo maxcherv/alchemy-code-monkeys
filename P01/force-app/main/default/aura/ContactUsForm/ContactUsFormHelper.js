@@ -1,6 +1,7 @@
 ({
     helpInitPage : function(component, event, helper) {
 
+        //Makes a callout to the apex controller to get users who can accept questions
         let getUsers = component.get("c.getAvailableUsers");
 
         getUsers.setCallback(this, function(response){
@@ -19,7 +20,7 @@
 
     },
 
-    makeEmail : function(){
+    makeEmail : function(component, event, helper){
 
         let sendEmail = component.get("c.emailMaker");
 
@@ -31,7 +32,7 @@
         let message = component.get("v.message");
 
         //Temporary email to send to
-        let toAddress = "acureisinsight@gmail.com";
+        let toAddress = component.find("PersonSelect").get("v.value");
 
         //Sets up the body
         let myBody = fName + " " + lName + " has submitted a question. The return email is: " + email + " with a body of:\n" + message;
@@ -46,14 +47,24 @@
 
         sendEmail.setCallback(this, function(response){
 
-            let myStatus = response.getStatus();
+            let myStatus = response.getState();
 
             if(myStatus === "SUCCESS"){
 
-                console.log("Callout successful");
+                let showToast = $A.get("e.force:showToast");
+                window.alert("Your question has been submitted");
+
+                //Clear the form here
+                component.set("v.firstName", "");
+                component.set("v.lastName", "");
+                component.set("v.email", "");
+                component.set("v.subject", "");
+                component.set("v.message", "");
+                component.find("PersonSelect").set("v.value", "");
 
             }else{
                 console.log("There was an error calling out to the apex class");
+                console.log(response.getError());
             }
 
         })

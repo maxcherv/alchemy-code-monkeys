@@ -4,8 +4,18 @@ public with sharing class ContactUsFormController {
     public static Boolean emailMaker(String mySubject, String myBody, String toAddress){
 
         Boolean emailSendSuccess = false;
-        String dispName = 'Test';
+        String dispName = 'User Question';
         String[] toAddresses = new List<String>();
+        String defaultAddress = 'jacob.johnson@revature.net';
+        system.debug('In apex');
+        
+        //Accounts for first available
+        //Ideally add this to a queue if possible
+        if(toAddress == ''){
+
+            toAddress = defaultAddress;
+
+        }
         toAddresses.add(toAddress);
 
         Messaging.SingleEmailMessage myEmail = new Messaging.SingleEmailMessage();
@@ -15,15 +25,15 @@ public with sharing class ContactUsFormController {
         myEmail.setSenderDisplayName(dispName);
         myEmail.setSubject(mySubject);
         myEmail.setPlainTextBody(myBody);
-        system.debug(toAddresses);
 
-        /*Messaging.SendEmailResult[] results = Messaging.sendEmail(new Messaging.SingleEmailMessage[] { myEmail });
+        Messaging.SendEmailResult[] results = Messaging.sendEmail(new Messaging.SingleEmailMessage[] { myEmail });
 
+        //Determines if the action was successful
         if(results[0].success){
             emailSendSuccess = true;
         }else{
             emailSendSuccess = false;
-        }*/
+        }
 
         return emailSendSuccess;
     }
@@ -31,14 +41,14 @@ public with sharing class ContactUsFormController {
     @AuraEnabled
     public static List<User> getAvailableUsers(){
 
+        //Declares variables
         List<User> availableUsers = new List<User>();
         String availableProfile = 'System Administrator';
 
+        //Queries org for the profile then the individuals who fit that profile
         Profile profileId = [SELECT id FROM Profile WHERE name=:availableProfile LIMIT 1];
-        system.debug(profileId);
 
-        availableUsers = [SELECT name, SenderEmail FROM User WHERE ProfileId=:profileId.id];
-        System.debug(availableUsers);
+        availableUsers = [SELECT name, email FROM User WHERE ProfileId=:profileId.id];
         return availableUsers;
 
     }

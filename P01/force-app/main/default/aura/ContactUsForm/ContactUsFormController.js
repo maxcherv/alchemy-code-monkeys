@@ -7,8 +7,7 @@
 
     sendEmail : function(component, event, helper){
 
-        console.log("Test");
-        helper.makeEmail();
+        helper.makeEmail(component, event, helper);
 
     }
 

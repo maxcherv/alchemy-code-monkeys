@@ -66,13 +66,22 @@
     </div>
     <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical slds-grid_vertical-align-center">
         <div class="slds-col slds-grid_vertical slds-grid_vertical-align-center slds-size_8-of-12">
-            <label for="message" style="font-size: 12px; font-weight: bold;">Your message:</label>
-            <textarea id="message" class="slds-textarea" />
+            <lightning:textarea aura:id="inputMessage" label="Message:" style="font-weight: bold;" class="slds-textarea" value="{!v.message}"/>
             <lightning:fileUpload label="Optional images" name="images" multiple="true" style="font-weight: bold;" />
+        </div>
+    </div>
+    <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical slds-grid_vertical-align-center" >
+        <div class="slds-col slds-grid_vertical slds-grid_vertical-align-center slds-size_8-of-12">
+            <lightning:select label="Specific user" aura:id="PersonSelect">
+                <option value="">First available</option>
+                <aura:iteration items="{!v.availableUsers}" var="User">
+                    <option value="{!User.email}" text="{!User.Name}"></option>
+                </aura:iteration>
+            </lightning:select>
         </div>
     </div>
 
     <div class="slds-clearfix">
-        <lightning:button label="Submit" title="Test" onClick="{!c.sendEmail}" class="slds-align_absolute-center" />
+        <lightning:button label="Submit" onclick="{!c.sendEmail}" class="slds-align_absolute-center" />
     </div>
 </aura:component>
