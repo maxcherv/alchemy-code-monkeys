@@ -3,5 +3,13 @@
 
         helper.helpInitPage();
 
+    },
+
+    sendEmail : function(component, event, helper){
+
+        console.log("Test");
+        helper.makeEmail();
+
     }
+
 })
