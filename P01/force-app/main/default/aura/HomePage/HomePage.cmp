@@ -4,6 +4,7 @@
 
     <!-- For T&j products Slide Item Area -->
     <aura:attribute name="prodItems" type="List"/> 
+    <aura:attribute name="imageVar" type="List" />
     
     
     <ltng:require scripts="{!$Resource.Assets}"/>
@@ -83,7 +84,7 @@
                             <!--<apex:repeat value="{!products}" var="pro"></apex:repeat>-->
                                 <!--<apex:variable var="imageVar" value="{!pro.Image__c}"/> -->
                                 <aura:iteration items="{!products}" var="pro">
-                                    <aura:attribute name="imageVar" type="{}" />
+                                    
                                     <div class="slide-item slick-slide slick-cloned" style="width: 198px;" >
                                         <!--new arrival products-->
                                         <div class="single_product" >
@@ -137,6 +138,33 @@
               </div>
             </div>
          </div>
+
+
+         <!-- campains-->
+         <div class="static-banner_area static-banner_area-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="static-banner-image static-banner-image-2"></div>
+                        <div class="static-banner-content">
+                            <p><span>-25% Off</span>This Week</p>
+                            <h2>Featured Product</h2>
+                            <h3>Dangling Earrings</h3>
+                            <p class="schedule">
+                                Starting at
+                                <span> $1209.00</span>
+                            </p>
+                            <div class="hiraola-btn-ps_left">
+                                <a href="ProductPage?id=a0C5e000001pX2pEAE" class="hiraola-btn">Shopping Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
 
     </body>
