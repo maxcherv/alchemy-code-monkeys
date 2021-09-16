@@ -1,0 +1,25 @@
+<aura:component >
+
+    <!--Page Header component-->
+	<c:PageHeader />
+
+
+    <!--About Us component body-->
+
+    <div class="slds-grid">
+
+        <div class="slds-col slds-size_1-of-3">
+            <span>1</span>
+        </div>
+
+        <div class="slds-col slds-size_1-of-3">
+            <span>2</span>
+        </div>
+
+        <div class="slds-col slds-size_1-of-3">
+            <span>3</span>
+        </div>
+
+    </div>
+
+</aura:component>
