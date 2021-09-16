@@ -67,7 +67,7 @@
     <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical slds-grid_vertical-align-center">
         <div class="slds-col slds-grid_vertical slds-grid_vertical-align-center slds-size_8-of-12">
             <lightning:textarea aura:id="inputMessage" label="Message:" style="font-weight: bold;" class="slds-textarea" value="{!v.message}"/>
-            <lightning:fileUpload label="Optional images" name="images" multiple="true" style="font-weight: bold;" />
+            <lightning:fileUpload aura:id="optionalAttach" label="Optional images" name="images" multiple="true" style="font-weight: bold;" />
         </div>
     </div>
     <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical slds-grid_vertical-align-center" >
