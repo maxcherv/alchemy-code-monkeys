@@ -100,5 +100,10 @@
 		//Show Assignment form for Vip1 appointments
 		component.get("v.AppointmentAssignmentSection");
 		component.set("v.AppointmentAssignmentSection", true);
+	},
+
+	//A user clicks on the confirm button to create the appointment with the designated Vip team
+	AppointmentSetupV1: function(component, event, helper){
+		helper.AppointmentCreationVip1(component, event, helper);
 	}
 })

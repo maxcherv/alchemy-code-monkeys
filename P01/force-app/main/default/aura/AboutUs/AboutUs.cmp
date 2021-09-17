@@ -1,4 +1,4 @@
-<aura:component >
+<aura:component controller="AboutUsController" >
 
     <!--Aura attributes that will store blurbs within the default value-->
     <aura:attribute name="VipSummary1" type="String" default="Barbra Strisand is TJ Jewelry's 3rd CEO. She has already 
@@ -59,8 +59,29 @@
     <aura:attribute name="AppointmentAssignmentSection" type="Boolean" default="false" />
 
 
-    <!--Attributes for appointments being made by users-->
-    <aura:attribute name="AppointmentName1" type="String"/>
+    <!--Assignment attributes that store information to be created as a record-->
+    <!--Vip 1-->
+    <aura:attribute name="AppointmentRecordFirstNameVip1" type="String" default=""/>
+    <aura:attribute name="AppointmentRecordLastNameVip1" type="String" default=""/>
+    <aura:attribute name="AppointmentRecordInspirationVip1" type="String" default=""/>
+    <aura:attribute name="AppointmentRecordDateVip1" type="DateTime" default="2021-09-12T18:13:41Z"/>
+
+    <!--Vip 2-->
+    <aura:attribute name="AppointmentRecordFirstNameVip2" type="String" default=""/>
+
+    <!--Vip 3-->
+    <aura:attribute name="AppointmentRecordFirstNameVip3" type="String" default=""/>
+
+    <!--Vip 4-->
+    <aura:attribute name="AppointmentRecordFirstNameVip4" type="String" default=""/>
+
+    <!--Vip 5-->
+    <aura:attribute name="AppointmentRecordFirstNameVip5" type="String" default=""/>
+
+    <!--Vip 6-->
+    <aura:attribute name="AppointmentRecordFirstNameVip6" type="String" default=""/>
+    
+
 
     <!--Page Header component-->
 	<c:PageHeader />
@@ -181,22 +202,26 @@
             <lightning:layout>
                 <!--input layout item for the First Name-->
                 <lightning:layoutItem size="4" padding="around-small">
-                    <lightning:input type="text" label="First name" placeholder="Bob"/>
+                    <lightning:input type="text" label="First name" placeholder="Bob" value="{!v.AppointmentRecordFirstNameVip1}"/>
                 </lightning:layoutItem>
 
                 <!--input layout item for the First Name-->
                 <lightning:layoutItem size="4" padding="around-small">
-                    <lightning:input type="text" label="Last name" placeholder="Saget"/>
+                    <lightning:input type="text" label="Last name" placeholder="Saget" value="{!v.AppointmentRecordLastNameVip1}"/>
                 </lightning:layoutItem>
 
                 <!--input layout item for the First Name-->
                 <lightning:layoutItem size="4" padding="around-large">
-                    <lightning:input type="text" label="Inspiration for visit" placeholder="I ran my car through your office..."/>
+                    <lightning:input type="text" label="Inspiration for visit" placeholder="I ran my car through your office..." value="{!v.AppointmentRecordInspirationVip1}"/>
                 </lightning:layoutItem>
                 
                 <!--input layout item for the First Name-->
                 <lightning:layoutItem size="4" padding="around-small">
-                    <lightning:input type="date" label="Appointment Date" dateStyle="short" placeholder="6/6/1944"/>
+                    <lightning:input type="datetime" label="Appointment Date" value="{!v.AppointmentRecordDateVip1}"/>
+                </lightning:layoutItem>
+
+                <lightning:layoutItem >
+                    <lightning:button label="Confirm" onclick="{!c.AppointmentSetupV1}" />
                 </lightning:layoutItem>
 
             </lightning:layout>
