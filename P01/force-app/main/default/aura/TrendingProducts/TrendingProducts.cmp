@@ -1,42 +1,43 @@
 <aura:component>
 
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/fontawesome-stars.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/ion-fonts.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/slick.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/animate.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/jquery-ui.min.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/lightgallery.min.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/nice-select.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/timecircles.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/style.css'}"/>
-	<ltng:require styles="{!$Resource.Fontawesome + '/font-awesome-4.7.0/css/font-awesome.css'}"/>
-    <ltng:require scripts="{!$Resource.Assets}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/modernizr-2.8.3.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/popper.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/bootstrap.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/slick.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/countdown.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.barrating.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.counterup.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.nice-select.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.sticky-sidebar.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery-ui.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.ui.touch-punch.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/lightgallery.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/scroll-top.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/theia-sticky-sidebar.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/waypoints.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/instafeed.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.elevateZoom-3.0.8.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/timecircles.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}"/>
-    
-    <aura:attribute name="trendingProducts" type="ProductTJ__c" required="true" />
-    <div class="hiraola-product_area">
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/fontawesome-stars.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/ion-fonts.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/slick.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/animate.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/jquery-ui.min.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/lightgallery.min.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/nice-select.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/timecircles.css'}" />
+   <ltng:require styles="{!$Resource.Assets + '/assets/css/style.css'}" />
+   <ltng:require styles="{!$Resource.Fontawesome + '/font-awesome-4.7.0/css/font-awesome.css'}" />
+   <ltng:require scripts="{!$Resource.Assets}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/modernizr-2.8.3.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/popper.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/bootstrap.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/slick.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/countdown.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.barrating.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.counterup.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.nice-select.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.sticky-sidebar.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery-ui.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.ui.touch-punch.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/lightgallery.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/scroll-top.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/theia-sticky-sidebar.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/waypoints.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/instafeed.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.elevateZoom-3.0.8.min.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/timecircles.js'}" />
+   <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}" />
+
+   <aura:attribute name="trendingproducts" type="List" required="true" />
+
+   <div class="hiraola-product_area">
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
@@ -44,45 +45,60 @@
                   <h4>Trending</h4>
                </div>
             </div>
+
             <!-- products-->
+
             <div class="col-lg-12">
                <div class="hiraola-product_slider slick-initialized slick-slider">
-                  <button class="slick-prev slick-arrow" style="display: block;"><i class="fa fa-chevron-left"></i></button>
+                  <button class="slick-prev slick-arrow" style="display: block;"><i
+                        class="fa fa-chevron-left"></i></button>
                   <div class="slick-list draggable">
-                     <div class="slick-track" style="opacity: 1; width: 4788px; transform: translate3d(-1140px, 0px, 0px);">
+                     <div class="slick-track"
+                        style="opacity: 1; width: 4788px; transform: translate3d(-1140px, 0px, 0px);">
+
                         <!-- Begin T&j products Slide Item Area -->
-                        <aura:iteration items="{!v.trendingProducts}" var="proTrend">
-                           <div class="slide-item slick-slide slick-cloned" style="width: 198px;" >
+                        <aura:iteration items="{!v.trendingproducts}" var="proTrend">
+                           <div class="slide-item slick-slide slick-cloned" style="width: 198px;">
                               <!--new arrival products-->
-                              <div class="single_product" >
-                                 <div class="product-img" >
-                                    <!--<a href="ProductPage?id={!v.proTrend.Id}" >
-                                       <img alt="TJ's Product Image"  title="TJ's Product Image" src="{!$Resource.Assets + '/' + !v.proTrend.Image__c}"/>
-                                    </a>-->
+                              <div class="single_product">
+                                 <div class="product-img">
+
+                                    <a href="ProductPage?id={!proTrend.Id}">
+                                       <img alt="TJ's Product Image" title="TJ's Product Image"
+                                          src="{!$Resource.Assets + proTrend.Image__c}" />
+                                    </a>
+
                                     <span class="sticker-2">Sale</span>
                                     <div class="add-actions">
                                        <ul>
-                                          <li><a class="hiraola-add_cart" href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="fa fa-shopping-cart"></i></a></li>
-                                          <li><a class="hiraola-add_compare" href="#" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i class="fa fa-random"></i></a></li>
-                                          <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fa fa-eye"></i></a></li>
+                                          <li><a class="hiraola-add_cart" href="#" data-toggle="tooltip"
+                                                data-placement="top" title="Add To Cart"><i
+                                                   class="fa fa-shopping-cart"></i></a></li>
+                                          <li><a class="hiraola-add_compare" href="#" data-toggle="tooltip"
+                                                data-placement="top" title="Compare This Product"><i
+                                                   class="fa fa-random"></i></a></li>
+                                          <li class="quick-view-btn" data-toggle="modal"
+                                             data-target="#exampleModalCenter"><a href="javascript:void(0)"
+                                                data-toggle="tooltip" data-placement="top" title="Quick View"><i
+                                                   class="fa fa-eye"></i></a></li>
                                        </ul>
                                     </div>
                                  </div>
                                  <div class="hiraola-product_content">
                                     <div class="product-desc_info">
-                                       <h6>
-                                          <a class="product-name" href="ProductPage?id={!v.proTrend.Id}">
-                                             <aura:outputField value="{!v.proTrend.Description__c}"/>
-                                          </a>
-                                       </h6>
+                                       <h6><a class="product-name" href="ProductPage?id={!proTrend.Id}">
+                                             <ui:outputText value="{!proTrend.Description__c}" />
+                                          </a></h6>
                                        <div class="price-box">
                                           <span class="new-price">
-                                             <aura:outputField value="{!v.proTrend.Retail_Price1__c}"/>
+                                             <ui:outputText value="{!proTrend.Retail_Price1__c}" />
                                           </span>
                                        </div>
                                        <div class="additional-add_action">
                                           <ul>
-                                             <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                                             <li><a class="hiraola-add_compare" href="wishlist.html"
+                                                   data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                      class="fa fa-heart"></i></a>
                                              </li>
                                           </ul>
                                        </div>
@@ -101,12 +117,11 @@
                            </div>
                         </aura:iteration>
                      </div>
-                  </div>
-                  <button class="slick-next slick-arrow" style="display: block;"><i class="fa fa-chevron-right"></i></button>
+                  </div><button class="slick-next slick-arrow" style="display: block;"><i
+                        class="fa fa-chevron-right"></i></button>
                </div>
             </div>
          </div>
       </div>
    </div>
-   <!-- Begin Hiraola's Product Tab Area -->
 </aura:component>

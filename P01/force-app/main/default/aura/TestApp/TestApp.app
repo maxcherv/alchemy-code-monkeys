@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:ContactUsForm />
+    <c:TopLevel />
 </aura:application>

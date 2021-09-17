@@ -5,8 +5,8 @@
 
         getCartItems.setCallback(this, function(response){
 
-            if(response.getState() == "SUCCESS"){
-                component.set("v.cartItems", response.getValue());
+            if(response.getState() === "SUCCESS"){
+                component.set("v.cartItems", response.getReturnValue());
             }else{
                 console.log("There was an error in calling the apex class");
                 console.log(response.getError());

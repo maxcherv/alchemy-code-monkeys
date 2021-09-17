@@ -1,39 +1,41 @@
 <aura:component>
 
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/fontawesome-stars.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/ion-fonts.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/slick.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/animate.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/jquery-ui.min.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/lightgallery.min.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/nice-select.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/timecircles.css'}"/>
-    <ltng:require styles="{!$Resource.Assets + '/assets/css/style.css'}"/>
-	<ltng:require styles="{!$Resource.Fontawesome + '/font-awesome-4.7.0/css/font-awesome.css'}"/>
-    <ltng:require scripts="{!$Resource.Assets}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/modernizr-2.8.3.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/popper.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/bootstrap.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/slick.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/countdown.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.barrating.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.counterup.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.nice-select.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.sticky-sidebar.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery-ui.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.ui.touch-punch.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/lightgallery.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/scroll-top.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/theia-sticky-sidebar.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/waypoints.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/instafeed.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.elevateZoom-3.0.8.min.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/timecircles.js'}"/>
-    <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}"/>
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/fontawesome-stars.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/ion-fonts.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/slick.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/animate.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/jquery-ui.min.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/lightgallery.min.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/nice-select.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/plugins/timecircles.css'}" />
+    <ltng:require styles="{!$Resource.Assets + '/assets/css/style.css'}" />
+    <ltng:require styles="{!$Resource.Fontawesome + '/font-awesome-4.7.0/css/font-awesome.css'}" />
+    <ltng:require scripts="{!$Resource.Assets}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/jquery-1.12.4.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/modernizr-2.8.3.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/popper.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/vendor/bootstrap.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/slick.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/countdown.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.barrating.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.counterup.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.nice-select.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.sticky-sidebar.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery-ui.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.ui.touch-punch.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/lightgallery.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/scroll-top.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/theia-sticky-sidebar.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/waypoints.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/instafeed.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/jquery.elevateZoom-3.0.8.min.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/timecircles.js'}" />
+    <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}" />
+
+    <aura:registerEvent name="TabClicked" type="c:TabClicked" />
 
     <header class="header-main_area header-main_area-3">
         <div class="header-top_area">
@@ -42,7 +44,7 @@
                     <div class="col-lg-6">
                         <div class="ht-left_area">
                             <div class="welcome_text">
-                          
+
                             </div>
                         </div>
                     </div>
@@ -61,13 +63,15 @@
                                         <ul class="ht-dropdown">
                                             <li class="active">
                                                 <a href="javascript:void(0)">
-                                                    <img alt="english" title="english" src="{!$Resource.Assets + '/assets/images/menu/icon/1.jpg'}"/>
+                                                    <img alt="english" title="english"
+                                                        src="{!$Resource.Assets + '/assets/images/menu/icon/1.jpg'}" />
                                                     English
                                                 </a>
                                             </li>
                                             <li><a href="javascript:void(0)">
-                                                <img alt="Francais" title="Francais" src="{!$Resource.Assets + '/assets/images/menu/icon/2.jpg'}"/>
-                                                Français</a>
+                                                    <img alt="Francais" title="Francais"
+                                                        src="{!$Resource.Assets + '/assets/images/menu/icon/2.jpg'}" />
+                                                    Français</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -117,12 +121,13 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn color--white d-lg-none d-block">
+                                        <a href="#mobileMenu"
+                                            class="mobile-menu_btn toolbar-btn color--white d-lg-none d-block">
                                             <i class="ion-navicon"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#miniCart" class="minicart-btn toolbar-btn">
+                                        <a href="#miniCart" class="minicart-btn toolbar-btn" onclick="{!c.TabWasClicked}">
                                             <i class="fa fa-shopping-cart"></i>
                                         </a>
                                     </li>
@@ -147,17 +152,11 @@
                         <div class="main-menu_area">
                             <nav>
                                 <ul>
-                                    <li class="dropdown-holder"><a href="HomePage">Home</a>
-                                        
-                                    </li>
-                                    <li class="megamenu-holder"><a href="#">Shop</a>
-
-                                    </li>
-    
-                   
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Jewelry</a></li>
+                                    <li class="dropdown-holder"><a href="HomePage" onclick="{!c.TabWasClicked}">Home</a></li>
+                                    <li class="megamenu-holder"><a href="#" onclick="{!c.TabWasClicked}">Shop</a></li>
+                                    <li><a href="#" onclick="{!c.TabWasClicked}">About Us</a></li>
+                                    <li><a href="#" onclick="{!c.TabWasClicked}">Contact</a></li>
+                                    <li><a href="#" onclick="{!c.TabWasClicked}">Jewelry</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -180,20 +179,20 @@
                             <nav>
                                 <ul>
                                     <li class="dropdown-holder"><a href="HomePage">Home</a>
-                                        
+
                                     </li>
                                     <li class="megamenu-holder"><a href="#">Shop</a>
-                             
+
                                     </li>
-                 
+
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>
-                        
-      
-                                 
-                        
+
+
+
+
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-8 col-sm-8">
@@ -210,7 +209,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn color--white d-lg-none d-block">
+                                    <a href="#mobileMenu"
+                                        class="mobile-menu_btn toolbar-btn color--white d-lg-none d-block">
                                         <i class="ion-navicon"></i>
                                     </a>
                                 </li>
@@ -238,7 +238,8 @@
                                 <i class="far fa-window-close"></i>
                             </a>
                             <div class="product-item_img">
-                                <img alt="TJ's Product Image" title="TJ's Product Image" url="{!$Resource.Assets + '/assets/images/product/small-size/2-1.jpg'}"/>
+                                <img alt="TJ's Product Image" title="TJ's Product Image"
+                                    url="{!$Resource.Assets + '/assets/images/product/small-size/2-1.jpg'}" />
                             </div>
                             <div class="product-item_content">
                                 <a class="product-item_title" href="shop-left-sidebar.html">Magni dolorum vel</a>
@@ -246,20 +247,24 @@
                             </div>
                         </li>
                         <li class="minicart-product">
-                            <a class="product-item_remove" href="javascript:void(0)"><i class="far fa-window-close"></i></a>
+                            <a class="product-item_remove" href="javascript:void(0)"><i
+                                    class="far fa-window-close"></i></a>
                             <div class="product-item_img">
-                                <img alt="TJ's Product Image" title="TJ's Product Image" url="{!$Resource.Assets + '/assets/images/product/small-size/2-2.jpg'}"/>
+                                <img alt="TJ's Product Image" title="TJ's Product Image"
+                                    url="{!$Resource.Assets + '/assets/images/product/small-size/2-2.jpg'}" />
                             </div>
                             <div class="product-item_content">
                                 <a class="product-item_title" href="shop-left-sidebar.html">Eius accusantium omnis</a>
                                 <span class="product-item_quantity">1 x $120.80</span>
                             </div>
                         </li>
-                        
+
                         <li class="minicart-product">
-                            <a class="product-item_remove" href="javascript:void(0)"><i class="far fa-window-close"></i></a>
+                            <a class="product-item_remove" href="javascript:void(0)"><i
+                                    class="far fa-window-close"></i></a>
                             <div class="product-item_img">
-                               <img alt="TJ's Product Image" title="TJ's Product Image" url="{!$Resource.Assets + '//images/product/small-size/2-3.jpg'}"/>
+                                <img alt="TJ's Product Image" title="TJ's Product Image"
+                                    url="{!$Resource.Assets + '//images/product/small-size/2-3.jpg'}" />
                             </div>
                             <div class="product-item_content">
                                 <a class="product-item_title" href="shop-left-sidebar.html">Aperiam adipisci dolorem</a>
@@ -287,7 +292,7 @@
                     <!-- Begin Offcanvas Search Area -->
                     <div class="offcanvas-search">
                         <form action="#" class="hm-searchbox">
-                            <input type="text" placeholder="Search for item..."/>
+                            <input type="text" placeholder="Search for item..." />
                             <button class="search_btn" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
@@ -301,24 +306,24 @@
                     <a href="#" class="btn-close"><i class="fa fa-window-close"></i></a>
                     <div class="offcanvas-inner_search">
                         <form action="#" class="hm-searchbox">
-                            <input type="text" placeholder="Search for item..."/>
+                            <input type="text" placeholder="Search for item..." />
                             <button class="search_btn" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                     <nav class="offcanvas-navigation">
                         <ul class="mobile-menu">
                             <li class="menu-item-has-children active"><a href="#"><span class="mm-text">Home</span></a>
-                     
+
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">
                                     <span class="mm-text">Shop</span>
                                 </a>
-             
-                         
+
+
                             </li>
-                
-                    
+
+
                         </ul>
                     </nav>
                     <nav class="offcanvas-navigation user-setting_area">
@@ -326,8 +331,8 @@
                             <li class="menu-item-has-children active">
                                 <a href="#">
                                     <span class="mm-text">User
-                                    Setting
-                                </span>
+                                        Setting
+                                    </span>
                                 </a>
                                 <ul class="sub-menu">
                                     <li>

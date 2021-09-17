@@ -1,16 +1,4 @@
-<aura:component controller="ContactUsFormController">
-
-    <aura:attribute name="firstName" type="String" default="" />
-    <aura:attribute name="lastName" type="String" default="" />
-    <aura:attribute name="email" type="String" default="" />
-    <aura:attribute name="subject" type="String" default="" />
-    <aura:attribute name="message" type="String" default="" />
-    <aura:attribute name="availableUsers" type="List" default="[]" />
-
-    <aura:attribute name="recordId" type="String" />
-    <aura:attribute name="acceptedFiles" type="List" default="{'.docx'}" />
-
-    <aura:handler name="init" value="{!this}" action="{!c.initPage}"/>
+<aura:component>
 
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}"/>
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}"/>
@@ -47,43 +35,41 @@
     <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/timecircles.js'}"/>
     <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}"/>
 
-    <div class="slds-grid slds-gutters slds-grid_align-center">
-        <div class="slds-col slds-size_4-of-12">
-            <lightning:input type="String" value="{!v.firstName}" label="First Name:" style="font-weight: bold;"/>
-        </div>
-        <div class="slds-col slds-size_4-of-12">
-            <lightning:input type="String" value="{!v.lastName}" label="Last Name:" style="font-weight: bold;"/>
-        </div>
-    </div>
-    <div class="slds-grid slds-gutters slds-grid_align-center">
-        <div class="slds-col slds-size_8-of-12">
-            <lightning:input type="String" value="{!v.email}" label="Email:" style="font-weight: bold;"/>
-        </div>
-    </div>
-    <div class="slds-grid slds-gutters slds-grid_align-space" >
-        <div class="slds-col slds-size_8-of-12">
-            <lightning:input type="String" value="{!v.subject}" label="Subject:" style="font-weight: bold;" />
-        </div>
-    </div>
-    <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical slds-grid_vertical-align-center">
-        <div class="slds-col slds-grid_vertical slds-grid_vertical-align-center slds-size_8-of-12">
-            <lightning:textarea aura:id="inputMessage" label="Message:" style="font-weight: bold;" class="slds-textarea" value="{!v.message}"/>
-        </div>
-    </div>
-    <div class="slds-grid slds-gutters slds-wrap slds-grid_vertical slds-grid_vertical-align-center" >
-        <div class="slds-col slds-grid_vertical slds-grid_vertical-align-center slds-size_8-of-12">
-            <lightning:select label="Specific user" aura:id="PersonSelect">
-                <option value="">First available</option>
-                <aura:iteration items="{!v.availableUsers}" var="User">
-                    <option value="{!User.email}" text="{!User.Name}"></option>
-                </aura:iteration>
-            </lightning:select>
-        </div>
-    </div>
+    <aura:attribute name="home" type="Boolean" default="true" />
+    <aura:attribute name="shop" type="Boolean" default="false" />
+    <aura:attribute name="aboutUs" type="Boolean" default="false" />
+    <aura:attribute name="contact" type="Boolean" default="false" />
+    <aura:attribute name="jewelry" type="Boolean" default="false" />
+    <aura:attribute name="cart" type="Boolean" default="false" />
 
-    <div class="slds-clearfix">
-        <lightning:button label="Submit" onclick="{!c.sendEmail}" class="slds-align_absolute-center" />
-    </div>
+    <aura:handler name="TabClicked" event="c:TabClicked" action="{!c.changeView}" />
+
+    <c:PageHeader />
+
+    <!--<aura:if isTrue="{!v.home}">
+        <c:HomePage />
+    </aura:if>
+
+    <aura:if isTrue="{!v.shop}">
+        <c:shop />
+    </aura:if>
+
+    <aura:if isTrue="{!v.aboutUs}">
+        <c:aboutUs />
+    </aura:if>-->
+
+    <aura:if isTrue="{!v.contact}">
+        <c:ContactUsForm />
+    </aura:if>
+
+    <!--<aura:if isTrue="{!v.jewelry}">
+        <c:jewelry />
+    </aura:if>-->
+
+    <aura:if isTrue="{!v.cart}">
+        <c:CartPage />
+    </aura:if>
 
     <c:PageFooter />
-</aura:component>
+
+</aura:component>	

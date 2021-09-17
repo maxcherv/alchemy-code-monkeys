@@ -39,11 +39,6 @@
     <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}"/>
 
     <body>
-        <header class="header-mail_area header-main_area-3">
-            <div class="header-top_area">
-                <c:PageHeader />
-            </div>
-        </header>
         <div class="hiraola-cart-area">
             <div class="container">
                 <div class="row">
