@@ -104,6 +104,16 @@
 
 	//A user clicks on the confirm button to create the appointment with the designated Vip team
 	AppointmentSetupV1: function(component, event, helper){
+		
+		//Call on the helper to execute logic needed to call a apex class to create the appointment record
 		helper.AppointmentCreationVip1(component, event, helper);
+
+		//Hide away the appointment scheduling
+		component.get("v.AppointmentAssignmentSection");
+		component.set("v.AppointmentAssignmentSection", false);
+
+		//Show Vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", true);
 	}
 })
