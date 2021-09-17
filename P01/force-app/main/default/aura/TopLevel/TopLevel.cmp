@@ -55,7 +55,7 @@
     </aura:if>
 
     <aura:if isTrue="{!v.aboutUs}">
-        <c:aboutUs />
+        <c:AboutUs />
     </aura:if>-->
 
     <aura:if isTrue="{!v.contact}">
