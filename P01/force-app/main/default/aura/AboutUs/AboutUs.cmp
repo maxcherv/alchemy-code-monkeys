@@ -1,25 +1,209 @@
 <aura:component >
 
+    <!--Aura attributes that will store blurbs within the default value-->
+    <aura:attribute name="VipSummary1" type="String" default="Barbra Strisand is TJ Jewelry's 3rd CEO. She has already 
+                                                                increased net profits by 700%. She has been personally attributed with 
+                                                                hiring an entire 17% of Springfield Illinois and reporting 78% revenue increase the very same year. 
+                                                                She is truly a revolutionary leader who has brought TJ Jewlery to the forefront of the Jewlery world. One of the jewlery world's most influential leaders. "/>
+
+    <aura:attribute name="VipSummary2" type="String" default="Jim Lahey is the best darn trailer park supervisor known to man. He maybe intoxicated, unconcious, unfaithful even,
+                                                                but nothing will get in his way to the LC and to your heart. Mr. Lahey is loyal to sunny vale trailer park and so long as it stands
+                                                                his spirit shall continue to live on. That being said he has somehow reincarnated himself and decided to work at TJ Jewlery.
+                                                                God knows what inspired him but he started from the bottom on the salesfloor and worked himself up to CFO. 
+                                                                The company has since become an icon and more profitable then Barbra's dreams. "/>
+
+    <aura:attribute name="VipSummary3" type="String" default="'Amy Sedaris has been the most powerful CMO in recorded history.' The only reason we 
+                                                                were upset at The Economist for running this line was that it explained our view of 
+                                                                Amy so perfectly. She is a force of nature and not one to be trifled with. Since her appearance you can
+                                                                not walk 10 feet without seeing an advertisment courated by Amy. Her assistance in bringing 
+                                                                TJ to the forefront of business can not be valued in dollars. "/>
+
+    <aura:attribute name="VipSummary4" type="String" default="Eric Cartman is the most influential COO in Jewlery history. it is a fact that all must simply accept. 
+                                                                His work ethic and demenor are like no other. Regardless of the pass of whichever client 
+                                                                Eric makes any process a comfortable an efficient one. TJ Jewlery is lucky to be in the presence of such
+                                                                greatness"/>
+
+    <aura:attribute name="VipSummary5" type="String" default="Frank Reynolds to most is a harmless short fat little man who seems to have nothing to offer to the world.
+                                                                Of course, most have not seen the 'Warthog' in its element. A vile unforgiving creature is a monster on
+                                                                on the trading floor or any place of business. The first time he had hear of what exactly TJ Jewlery was he was hooked.
+                                                                In his own words: 'This racket is a complete sloozefest! you guys are making so much money you don't know what to do with it.
+                                                                Of course I'm in!' The warthog has lived up to his reputation since the very beginning of his stay with TJ Jewlery. Gutting half the 
+                                                                staff, Frank showed that TJ Jewlery meant business. Now under Frank's guide, not a penny is wasted but no employee is left uncomfortable. 
+                                                                "/>
+
+    <aura:attribute name="VipSummary6" type="String" default="Dave Chappelle is a pioneer in 14 sectors and TJ Jewlery was one of his first. Creating and revolutionizing the CPO, Chief People Office, position.
+                                                                 Being one of the oldest remaining 
+                                                                members Dave has seen the company skyrocket into the stratosphere. He himself unveiling and opening every branch.
+                                                                Involving himself in every hire, client approval, and negotiation Dave works tirelessy to let TJ Jewlery's 
+                                                                excellence shine. "/>
+
+    <!--These attributes store a boolean value-->
+    <!--When default=false they do not appear-->
+    <!--When default=true they appear-->
+    <!---->
+    <!---->
+    <!--VipBool, boolean for vip information section-->
+    <aura:attribute name="VipSection" type="Boolean" default="true" />
+    <aura:attribute name="VipBool1" type="Boolean" default="false" />
+    <aura:attribute name="VipBool2" type="Boolean" default="false" />
+    <aura:attribute name="VipBool3" type="Boolean" default="false" />
+    <aura:attribute name="VipBool4" type="Boolean" default="false" />
+    <aura:attribute name="VipBool5" type="Boolean" default="false" />
+    <aura:attribute name="VipBool6" type="Boolean" default="false" />
+
+    <!---->
+    <!---->
+    <!--Assignemnt, boolean for making assingmnets from a member of the team-->
+    <!--When default=false they do not appear-->
+    <!--When default=true they appear-->
+    <aura:attribute name="AppointmentAssignmentSection" type="Boolean" default="false" />
+
+
+    <!--Attributes for appointments being made by users-->
+    <aura:attribute name="AppointmentName1" type="String"/>
+
     <!--Page Header component-->
 	<c:PageHeader />
 
 
     <!--About Us component body-->
 
-    <div class="slds-grid">
+    <!--Aura if allows all of the section to be hidden and shown with ease-->
+    <aura:if isTrue="{!v.VipSection}">
+        <!--First row of VIP employees-->
+        <div class="slds-grid slds-gutters slds-grid_align-center ">
 
-        <div class="slds-col slds-size_1-of-3">
-            <span>1</span>
+            <!--Vip1-->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:button variant="brand-outline" label="CEO" onclick="{!c.employeeInformation1}"/>
+                <img src="{!$Resource.businessStockImage1}" />
+                
+                <!--Hidden collapsible section-->
+                <!--When button is pressed VipBool1 switched to true-->
+                <!--Vip information and close button are displayed-->
+                <!--Close button sets VipBool1 back to false -->
+                <aura:if isTrue="{!v.VipBool1}">
+                    <div>{!v.VipSummary1}</div>
+                    <div><lightning:button variant="inverse" label="X" onclick="{!c.employeeInformation1Close}"/></div>
+                    <div><lightning:button variant="brand" label="Book an appointment with the team!" onclick="{!c.appointmentVip1}"/></div>
+                </aura:if>
+
+            </div>
+
+            <!--Vip2-->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:button variant="brand-outline" label="CFO" onclick="{!c.employeeInformation2}"/>
+                <img src="{!$Resource.businessStockImage2}" />
+
+                <!--Hidden collapsible section -->
+                <!--When button is pressed VipBool2 switched to true-->
+                <!--Vip information and close button are displayed-->
+                <!--Close button sets VipBool2 back to false -->
+                <aura:if isTrue="{!v.VipBool2}">
+                    <div>{!v.VipSummary2}</div>
+                    <div><lightning:button variant="brand" label="Close" onclick="{!c.employeeInformation2Close}"/></div>
+                </aura:if>
+            </div>
+
+            <!--Vip3-->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:button variant="brand-outline" label="CMO" onclick="{!c.employeeInformation3}"/>
+                <img src="{!$Resource.businessStockImage3}" />
+
+                <!--Hidden collapsible section -->
+                <!--When button is pressed VipBool3 switched to true-->
+                <!--Vip information and close button are displayed-->
+                <!--Close button sets VipBool3 back to false -->
+                <aura:if isTrue="{!v.VipBool3}">
+                    <div>{!v.VipSummary3}</div>
+                    <div><lightning:button variant="brand" label="X" onclick="{!c.employeeInformation3Close}"/></div>
+                </aura:if>
+            </div>
+
         </div>
+        <!--Second row of VIP employees-->
+        <div class="slds-grid slds-gutters slds-grid_align-center ">
 
-        <div class="slds-col slds-size_1-of-3">
-            <span>2</span>
+            <!--Vip4-->
+            <div class="slds-col slds-size_1-of-3 ">
+                <lightning:button variant="brand-outline" label="COO" onclick="{!c.employeeInformation4}"/>
+                <img src="{!$Resource.businessStockImage4}" />
+
+                <!--Hidden collapsible section -->
+                <!--When button is pressed VipBool4 switched to true-->
+                <!--Vip information and close button are displayed-->
+                <!--Close button sets VipBool4 back to false -->
+                <aura:if isTrue="{!v.VipBool4}">
+                    <div>{!v.VipSummary4}</div>
+                    <div><lightning:button variant="brand" label="X" onclick="{!c.employeeInformation4Close}"/></div>
+                </aura:if>
+            </div>
+
+            <!--Vip5-->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:button variant="brand-outline" label="CTO" onclick="{!c.employeeInformation5}"/>
+                <img src="{!$Resource.businessStockImage5}" />
+
+                <!--Hidden collapsible section -->
+                <!--When button is pressed VipBool5 switched to true-->
+                <!--Vip information and close button are displayed-->
+                <!--Close button sets VipBool5 back to false -->
+                <aura:if isTrue="{!v.VipBool5}">
+                    <div>{!v.VipSummary5}</div>
+                    <div><lightning:button variant="brand" label="X" onclick="{!c.employeeInformation5Close}"/></div>
+                </aura:if>
+            </div>
+
+            <!--Vip6-->
+            <div class="slds-col slds-size_1-of-3">
+                <lightning:button variant="brand-outline" label="CPO" onclick="{!c.employeeInformation6}"/>
+                <img src="{!$Resource.businessStockImage6}" />
+
+                <!--Hidden collapsible section -->
+                <!--When button is pressed VipBool6 switched to true-->
+                <!--Vip information and close button are displayed-->
+                <!--Close button sets VipBool6 back to false -->
+                <aura:if isTrue="{!v.VipBool6}">
+                    <div>{!v.VipSummary6}</div>
+                    <div><lightning:button variant="brand" label="X" onclick="{!c.employeeInformation6Close}"/></div>
+                </aura:if>
+            </div>
+
         </div>
+    </aura:if>
 
-        <div class="slds-col slds-size_1-of-3">
-            <span>3</span>
+    <!--Aura if allows all of the section to be hidden and shown with ease-->
+    <aura:if isTrue="{!v.AppointmentAssignmentSection}">
+        <!--When a user wants to book an appointmet with Vip1/Employee1-->
+        <!--This happens after the user clicks the 'Book an appointment with the team!' button-->
+        <div>
+
+            <lightning:layout>
+                <!--input layout item for the First Name-->
+                <lightning:layoutItem size="4" padding="around-small">
+                    <lightning:input type="text" label="First name" placeholder="Bob"/>
+                </lightning:layoutItem>
+
+                <!--input layout item for the First Name-->
+                <lightning:layoutItem size="4" padding="around-small">
+                    <lightning:input type="text" label="Last name" placeholder="Saget"/>
+                </lightning:layoutItem>
+
+                <!--input layout item for the First Name-->
+                <lightning:layoutItem size="4" padding="around-large">
+                    <lightning:input type="text" label="Inspiration for visit" placeholder="I ran my car through your office..."/>
+                </lightning:layoutItem>
+                
+                <!--input layout item for the First Name-->
+                <lightning:layoutItem size="4" padding="around-small">
+                    <lightning:input type="date" label="Appointment Date" dateStyle="short" placeholder="6/6/1944"/>
+                </lightning:layoutItem>
+
+            </lightning:layout>
+
         </div>
+    </aura:if>
 
-    </div>
+    
 
 </aura:component>
