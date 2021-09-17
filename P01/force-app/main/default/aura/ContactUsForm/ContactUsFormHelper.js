@@ -29,8 +29,6 @@
         let email = component.get("v.email");        
         let mySubject = component.get("v.subject");
         let message = component.get("v.message");
-        let attachment = component.find("optionalAttach");
-        console.log(attachment);
 
         //Temporary email to send to
         let toAddress = component.find("PersonSelect").get("v.value");
@@ -70,6 +68,6 @@
 
         })
 
-        //$A.enqueueAction(sendEmail);
+        $A.enqueueAction(sendEmail);
     }
 })
