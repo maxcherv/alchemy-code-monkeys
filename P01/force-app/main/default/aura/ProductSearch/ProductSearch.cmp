@@ -1,0 +1,74 @@
+<aura:component controller="GetProducts">
+    <aura:attribute name="SearchName" type="String" default=""/>
+    <aura:attribute name="SearchType" type="String" default=""/>
+    <aura:attribute name="SearchStyle" type="String" default=""/>
+    <aura:attribute name="Products" type="ProductTJ__c[]" default=""/>
+    <aura:attribute name="Fields" type="List" />
+    
+    <aura:handler name="DoInit" value="{! this }" action="{! c.DoInit }"/>
+    <lightning:card>
+    <form class="slds-form_stacked">
+        <div class="slds-p-around_medium">
+            <lightning:input type="text" aura:id="SearchName" class="input" label="SearchName" 
+                             value="{!v.SearchName}" />
+            
+            <lightning:select aura:id="style" name="style" value="{!v.SearchStyle}" label="Jewelry Style">
+                <option value=""> All Types</option>
+            	<option value="Bracelets">Bracelets</option>
+        		<option value="Earrings">Earrings</option>
+                <option value="Necklaces">Necklaces</option>
+                <option value="Rings">Rings</option>
+        	</lightning:select>
+            <aura:if isTrue="{!v.SearchType!=''}">
+            	<aura:if isTrue="{!v.SearchType=='Bracelets'}">
+                     <lightning:select aura:id="style" name="style" value="{!v.SearchStyle}" label="Jewelry Style">
+                        <option value=""> All Types</option>
+                        <option value="Bangle">Bangle</option>
+                        <option value="Cuff">Cuff</option>
+                        <option value="Tennis">Tennis</option>
+                    </lightning:select>
+                </aura:if>
+                <aura:if isTrue="{!v.SearchType=='Earrings'}">
+                     <lightning:select aura:id="style" name="style" value="{!v.SearchStyle}" label="Jewelry Style">
+                        <option value=""> All Types</option>
+                        <option value="Cluster">Cluster</option>
+                        <option value="Dangle">Dangle</option>
+                        <option value="Drop">Drop</option>
+                        <option value="Hoop">Hoop</option>
+                        <option value="Stud">Stud</option>
+                        
+                     </lightning:select>
+                </aura:if>
+                <aura:if isTrue="{!v.SearchType=='Necklaces'}">
+                    <lightning:select aura:id="style" name="style" value="{!v.SearchStyle}" label="Jewelry Style">
+                        <option value=""> All Types</option>
+                        <option value="Cluster">Cluster</option>
+                        <option value="Solitaire">Solitaire</option>
+                 
+                    </lightning:select>
+                
+                </aura:if>
+                <aura:if isTrue="{!v.SearchType=='Rings'}">
+                    <lightning:select aura:id="type" name="type" value="{!v.SearchType}" label="Jewelry Type">
+                        <option value=""> All Types</option>
+                        <option value="Cluster">Cluster</option>
+                        <option value="Cocktail">Cocktail</option>
+                        <option value="Halo">Halo</option>
+                        <option value="Solitaire">Solitaire</option>
+                    </lightning:select>
+                
+                </aura:if>
+            </aura:if>
+                <lightning:button label="Search"  class="slds-m-top_medium"
+                              variant="brand"
+                              onclick="{!c.searchProducts}"/>
+        	<aura:if isTrue="{!v.Products!=''}">
+                <aura:iteration items="{!v.Products}" var="item">
+                    
+                </aura:iteration>
+            
+            </aura:if>
+        </div>
+    </form>
+        </lightning:card>
+</aura:component>
