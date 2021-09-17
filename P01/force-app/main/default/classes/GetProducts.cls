@@ -11,7 +11,7 @@ public class GetProducts {
             {
                 query+=' WHERE ';
             }
-            query = query + 'Name LIKE :' +name;
+            query = query + 'Name LIKE :name';
             add=true;
         }
          if(type!='')
@@ -24,16 +24,17 @@ public class GetProducts {
             {
                 query+=' AND ';
             }
-            query= query + ' Product_Type__c=:' + type;
+            query= query + ' Product_Type__c=:type';
             add=true;
             if(style!='')
             {
                
-                query= query + ' AND Product_Style__c=:' + style;
+                query= query + ' AND Product_Style__c=:style' ;
             }
         }
         system.debug(query);
         list<ProductTJ__c> results = database.query(query);
+        
         system.debug(results);
         return results;
     }  
