@@ -16,7 +16,16 @@
         <div class="hiraola-slider_area-2 hiraola-slider_area-3 color-white">
             <div class="main-slider">
                 <!-- Begin Single Slide Area -->
-                
+                <div class="single-slide animation-style-01 bg-6">
+                    <div class="container">
+                        <div class="slider-content slider-content-2">
+                            <div class="hiraola-btn-ps_center slide-btn">
+                                <a class="hiraola-btn" href="ProductPage?id=a0C5e000001pWp3EAE">Shopping Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
                 <!-- Single Slide Area End Here -->
                 <!-- Begin Single Slide Area -->
     
