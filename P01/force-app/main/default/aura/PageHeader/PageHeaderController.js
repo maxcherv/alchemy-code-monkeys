@@ -4,7 +4,10 @@
         event.preventDefault();
         let outerText = event.target.outerText;
         if(!outerText){
-            outerText = "CART";
+            
+            //Add logic to allow for non-labeled icons
+            outerText = event.currentTarget.id;
+
         }
         
         let myEvent = component.getEvent("TabClicked");
