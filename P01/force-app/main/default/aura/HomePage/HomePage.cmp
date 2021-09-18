@@ -21,10 +21,10 @@
                 <div class="single-slide animation-style-01 bg-6">
                     <div class="container">
                         <div class="slider-content slider-content-2">
-                            <h5><span>Black Friday</span> This Week</h5>
-                            <h2>Fabulous Necklaces</h2>
-                            <h3>Marine Corp Exchange</h3>
-                            <h4> <span>$1599.00</span></h4>
+                            <p><span>Black Friday</span> This Week</p>
+                            <p>Fabulous Necklaces</p>
+                            <p>Marine Corp Exchange</p>
+                            <p> <span>$1599.00</span></p>
                             <div class="hiraola-btn-ps_center slide-btn">
                                 <a class="hiraola-btn" href="ProductPage?id=a0C5e000001pWp3EAE">Shopping Now</a>
                             </div>
