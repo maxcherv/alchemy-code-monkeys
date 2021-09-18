@@ -116,7 +116,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#searchBar" class="search-btn toolbar-btn">
+                                        <a href="#searchBar" class="search-btn toolbar-btn" onclick="{!c.TabWasClicked}" id="SEARCH">
                                             <i class="fa fa-search"></i>
                                         </a>
                                     </li>
@@ -127,7 +127,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#miniCart" class="minicart-btn toolbar-btn" onclick="{!c.TabWasClicked}">
+                                        <a href="#miniCart" class="minicart-btn toolbar-btn" onclick="{!c.TabWasClicked}" id="CART">
                                             <i class="fa fa-shopping-cart"></i>
                                         </a>
                                     </li>
