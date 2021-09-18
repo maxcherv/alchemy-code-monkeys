@@ -68,7 +68,10 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Admin</members>
+        <members>T%26J Sales Profile</members>
+        <members>T%26J_Jewelry Profile</members>
+        <members>VP Sales</members>
         <name>Profile</name>
     </types>
     <types>
