@@ -100,11 +100,6 @@
     <aura:attribute name="AppointmentRecordLastNameVip6" type="String" default=""/>
     <aura:attribute name="AppointmentRecordInspirationVip6" type="String" default=""/>
     <aura:attribute name="AppointmentRecordDateVip6" type="DateTime" default="2021-09-12T18:13:41Z"/>
-    
-
-
-    <!--Page Header component-->
-	<c:PageHeader />
 
 
     <!--About Us component body-->
