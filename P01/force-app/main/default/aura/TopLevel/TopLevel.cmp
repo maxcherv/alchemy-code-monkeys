@@ -48,21 +48,21 @@
 
     <c:PageHeader />
 
-    <!--<aura:if isTrue="{!v.home}">
+    <aura:if isTrue="{!v.home}">
         <c:HomePage />
     </aura:if>
 
-    <aura:if isTrue="{!v.search}">
+    <!--<aura:if isTrue="{!v.search}">
         <c:ProductSearch />
     </aura:if>
 
     <aura:if isTrue="{!v.shop}">
         <c:shop />
-    </aura:if>
+    </aura:if>-->
 
     <aura:if isTrue="{!v.aboutUs}">
         <c:AboutUs />
-    </aura:if>-->
+    </aura:if>
 
     <aura:if isTrue="{!v.contact}">
         <c:ContactUsForm />
