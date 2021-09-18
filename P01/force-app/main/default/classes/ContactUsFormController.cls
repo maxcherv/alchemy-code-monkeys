@@ -6,7 +6,7 @@ public with sharing class ContactUsFormController {
         Boolean emailSendSuccess = false;
         String dispName = 'User Question';
         String[] toAddresses = new List<String>();
-        String defaultAddress = 'jacob.johnson@revature.net';
+        String defaultAddress = 'max.chervinsky@gmail.com';
         system.debug('In apex');
         
         //Accounts for first available
