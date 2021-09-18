@@ -42,6 +42,7 @@
     <aura:attribute name="jewelry" type="Boolean" default="false" />
     <aura:attribute name="cart" type="Boolean" default="false" />
     <aura:attribute name="account" type="Boolean" default="false" />
+    <aura:attribute name="search" type="Boolean" default="false" />
 
     <aura:handler name="TabClicked" event="c:TabClicked" action="{!c.changeView}" />
 
@@ -49,6 +50,10 @@
 
     <!--<aura:if isTrue="{!v.home}">
         <c:HomePage />
+    </aura:if>
+
+    <aura:if isTrue="{!v.search}">
+        <c:ProductSearch />
     </aura:if>
 
     <aura:if isTrue="{!v.shop}">
@@ -71,9 +76,9 @@
         <c:CartPage />
     </aura:if>
 
-    <aura:if isTrue="{!v.account}">
+    <!--<aura:if isTrue="{!v.account}">
         <c:AccountForm />
-    </aura:if>
+    </aura:if>-->
 
     <c:PageFooter />
 

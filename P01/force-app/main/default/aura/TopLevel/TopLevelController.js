@@ -12,6 +12,8 @@
         component.set("v.contact", false);
         component.set("v.jewelry", false);
         component.set("v.cart", false);
+        component.set("v.account", false);
+        component.set("v.search", false);
 
         //Select which to turn on
         switch(newTab){
@@ -33,6 +35,12 @@
                 break;
             case "CART":
                 component.set("v.cart", true);
+                break;
+            case "ACCOUNT":
+                component.set("v.account", true);
+                break;
+            case "SEARCH":
+                component.set("v.search", true);
                 break;
 
         }
