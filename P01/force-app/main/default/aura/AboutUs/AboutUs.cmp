@@ -56,7 +56,7 @@
     <!--Assignemnt, boolean for making assingmnets from a member of the team-->
     <!--When default=false they do not appear-->
     <!--When default=true they appear-->
-    <aura:attribute name="AppointmentAssignmentSection" type="Boolean" default="false" />
+    <aura:attribute name="AppointmentAssignmentSectionVip1" type="Boolean" default="false" />
 
 
     <!--Assignment attributes that store information to be created as a record-->
@@ -197,41 +197,44 @@
     <aura:if isTrue="{!v.AppointmentAssignmentSection}">
         <!--When a user wants to book an appointmet with Vip1/Employee1-->
         <!--This happens after the user clicks the 'Book an appointment with the team!' button-->
-        <div class="slds-grid slds-gutters slds-grid_align-center ">
+        <div class="slds-grid slds-gutters slds-grid_vertical ">
 
-            
-            <!--input layout item for the First Name-->
-            <div class="slds-col slds-size_1-of-2">
-                <lightning:input type="text" label="First name" placeholder="Bob" value="{!v.AppointmentRecordFirstNameVip1}"/>
+            <!--First row including the input for the first and last name-->
+            <div>
+                <!--input layout item for the First Name-->
+                <div class="slds-col">
+                    <lightning:input type="text" label="First name" placeholder="Bob" value="{!v.AppointmentRecordFirstNameVip1}"/>
+                </div>
+                    
+                <!--input layout item for the Last Name-->
+                <div class="slds-col">
+                    <lightning:input type="text" label="Last name" placeholder="Saget" value="{!v.AppointmentRecordLastNameVip1}"/>
+                </div>
+
             </div>
-                
-            <!--input layout item for the First Name-->
-            <div class="slds-col slds-size_1-of-2">
-                <lightning:input type="text" label="Last name" placeholder="Saget" value="{!v.AppointmentRecordLastNameVip1}"/>
+            
+            <!--Second Row of form-->
+            <div>
+                <!--input layout item for the Inspiration-->
+                <div class="slds-col">
+                    <lightning:input type="text" label="Inspiration for visit" placeholder="I ran my car through your office..." value="{!v.AppointmentRecordInspirationVip1}"/>
+                </div>
             </div>
 
-            <!--input layout item for the First Name-->
-            <div class="slds-col">
-                <lightning:input type="text" label="Inspiration for visit" placeholder="I ran my car through your office..." value="{!v.AppointmentRecordInspirationVip1}"/>
+            <!--Third Row of form-->
+            <div>
+                <!--input layout item for the Date and time-->
+                <div class="slds-col">
+                    <lightning:input type="datetime" label="Appointment Date" value="{!v.AppointmentRecordDateVip1}"/>
+                </div>
             </div>
             
-            <!--input layout item for the First Name-->
-            <div class="slds-col">
-                <lightning:input type="datetime" label="Appointment Date" value="{!v.AppointmentRecordDateVip1}"/>
-            </div>
-            
-            
-                
-            
-            
-            
-            
-
-            
+            <!--Fourth Row of form-->
+            <div>
                 <lightning:button label="Confirm" onclick="{!c.AppointmentSetupV1}" />
+            </div>
                 
-
-            
+                
 
         </div>
     </aura:if>

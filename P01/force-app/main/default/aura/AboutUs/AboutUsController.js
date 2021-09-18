@@ -98,8 +98,8 @@
 		component.set("v.VipSection", false);
 
 		//Show Assignment form for Vip1 appointments
-		component.get("v.AppointmentAssignmentSection");
-		component.set("v.AppointmentAssignmentSection", true);
+		component.get("v.AppointmentAssignmentSectionVip1");
+		component.set("v.AppointmentAssignmentSectionVip1", true);
 	},
 
 	//A user clicks on the confirm button to create the appointment with the designated Vip team
@@ -109,8 +109,8 @@
 		helper.AppointmentCreationVip1(component, event, helper);
 
 		//Hide away the appointment scheduling
-		component.get("v.AppointmentAssignmentSection");
-		component.set("v.AppointmentAssignmentSection", false);
+		component.get("v.AppointmentAssignmentSectionVip1");
+		component.set("v.AppointmentAssignmentSectionVip1", false);
 
 		//Show Vip information section
 		component.get("v.VipSection");
