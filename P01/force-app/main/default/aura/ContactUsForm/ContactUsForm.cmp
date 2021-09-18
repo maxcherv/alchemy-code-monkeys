@@ -1,4 +1,4 @@
-<aura:component controller="ContactUsFormController">
+<aura:component controller="ContactUsFormController" implements="forceCommunity:availableForAllPageTypes" access="global">
 
     <aura:attribute name="firstName" type="String" default="" />
     <aura:attribute name="lastName" type="String" default="" />

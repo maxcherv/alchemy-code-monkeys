@@ -1,4 +1,4 @@
-<aura:component controller="AboutUsController" >
+<aura:component controller="AboutUsController" implements="forceCommunity:availableForAllPageTypes" access="global" >
 
     <!--Aura attributes that will store blurbs within the default value-->
     <aura:attribute name="VipSummary1" type="String" default="Barbra Strisand is TJ Jewelry's 3rd CEO. She has already 

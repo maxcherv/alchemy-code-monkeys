@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
 
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}"/>
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}"/>

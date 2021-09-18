@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
 	<c:PageHeader />
     <lightning:input type="text" label="We are farmers dum da dum da dum dum duh" />
 

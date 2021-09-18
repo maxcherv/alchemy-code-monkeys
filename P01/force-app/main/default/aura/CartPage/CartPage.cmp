@@ -1,4 +1,4 @@
-<aura:component controller="CartItemController">
+<aura:component controller="CartItemController" implements="forceCommunity:availableForAllPageTypes" access="global">
 
     <aura:attribute name="cartItems" type="List" />
     <aura:handler name="init" value="{!this}" action="{!c.initPage}" />
