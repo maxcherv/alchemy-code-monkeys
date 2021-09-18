@@ -115,5 +115,145 @@
 		//Show Vip information section
 		component.get("v.VipSection");
 		component.set("v.VipSection", true);
+	},
+
+	//A user wants to book an appointment with Vip2
+	//Pop up window appears helping them create an appointment
+	appointmentVip2: function(component, event, helper) {
+
+		//Close vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", false);
+
+		//Show Assignment form for Vip1 appointments
+		component.get("v.AppointmentAssignmentSectionVip2");
+		component.set("v.AppointmentAssignmentSectionVip2", true);
+	},
+
+	//A user clicks on the confirm button to create the appointment with the designated Vip team
+	AppointmentSetupV2: function(component, event, helper){
+		
+		//Call on the helper to execute logic needed to call a apex class to create the appointment record
+		helper.AppointmentCreationVip2(component, event, helper);
+
+		//Hide away the appointment scheduling
+		component.get("v.AppointmentAssignmentSectionVip2");
+		component.set("v.AppointmentAssignmentSectionVip2", false);
+
+		//Show Vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", true);
+	}, 
+
+	//A user wants to book an appointment with Vip3
+	//Pop up window appears helping them create an appointment
+	appointmentVip3: function(component, event, helper) {
+
+		//Close vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", false);
+
+		//Show Assignment form for Vip1 appointments
+		component.get("v.AppointmentAssignmentSectionVip3");
+		component.set("v.AppointmentAssignmentSectionVip3", true);
+	},
+
+	//A user clicks on the confirm button to create the appointment with the designated Vip team
+	AppointmentSetupV3: function(component, event, helper){
+		
+		//Call on the helper to execute logic needed to call a apex class to create the appointment record
+		helper.AppointmentCreationVip3(component, event, helper);
+
+		//Hide away the appointment scheduling
+		component.get("v.AppointmentAssignmentSectionVip3");
+		component.set("v.AppointmentAssignmentSectionVip3", false);
+
+		//Show Vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", true);
+	},
+
+	//A user wants to book an appointment with Vip4
+	//Pop up window appears helping them create an appointment
+	appointmentVip4: function(component, event, helper) {
+
+		//Close vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", false);
+
+		//Show Assignment form for Vip1 appointments
+		component.get("v.AppointmentAssignmentSectionVip4");
+		component.set("v.AppointmentAssignmentSectionVip4", true);
+	},
+
+	//A user clicks on the confirm button to create the appointment with the designated Vip team
+	AppointmentSetupV4: function(component, event, helper){
+		
+		//Call on the helper to execute logic needed to call a apex class to create the appointment record
+		helper.AppointmentCreationVip4(component, event, helper);
+
+		//Hide away the appointment scheduling
+		component.get("v.AppointmentAssignmentSectionVip4");
+		component.set("v.AppointmentAssignmentSectionVip4", false);
+
+		//Show Vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", true);
+	},
+	
+	//A user wants to book an appointment with Vip5
+	//Pop up window appears helping them create an appointment
+	appointmentVip5: function(component, event, helper) {
+
+		//Close vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", false);
+
+		//Show Assignment form for Vip1 appointments
+		component.get("v.AppointmentAssignmentSectionVip5");
+		component.set("v.AppointmentAssignmentSectionVip5", true);
+	},
+
+	//A user clicks on the confirm button to create the appointment with the designated Vip team
+	AppointmentSetupV5: function(component, event, helper){
+		
+		//Call on the helper to execute logic needed to call a apex class to create the appointment record
+		helper.AppointmentCreationVip5(component, event, helper);
+
+		//Hide away the appointment scheduling
+		component.get("v.AppointmentAssignmentSectionVip5");
+		component.set("v.AppointmentAssignmentSectionVip5", false);
+
+		//Show Vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", true);
+	},
+	
+	//A user wants to book an appointment with Vip6
+	//Pop up window appears helping them create an appointment
+	appointmentVip6: function(component, event, helper) {
+
+		//Close vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", false);
+
+		//Show Assignment form for Vip1 appointments
+		component.get("v.AppointmentAssignmentSectionVip6");
+		component.set("v.AppointmentAssignmentSectionVip6", true);
+	},
+
+	//A user clicks on the confirm button to create the appointment with the designated Vip team
+	AppointmentSetupV6: function(component, event, helper){
+		
+		//Call on the helper to execute logic needed to call a apex class to create the appointment record
+		helper.AppointmentCreationVip6(component, event, helper);
+
+		//Hide away the appointment scheduling
+		component.get("v.AppointmentAssignmentSectionVip6");
+		component.set("v.AppointmentAssignmentSectionVip6", false);
+
+		//Show Vip information section
+		component.get("v.VipSection");
+		component.set("v.VipSection", true);
 	}
 })
