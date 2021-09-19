@@ -13,7 +13,6 @@
                                                        }"/>
     <aura:attribute name="success" type="boolean"/>
     <aura:attribute name="fail" type="boolean" />
-    <c:PageHeader/>
     <lightning:card title="New Account">
     	 <form class="slds-form_stacked">
         <div class="slds-p-around_medium">

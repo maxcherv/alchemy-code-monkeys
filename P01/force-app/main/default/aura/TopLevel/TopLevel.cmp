@@ -52,11 +52,11 @@
         <c:HomePage />
     </aura:if>
 
-    <!--<aura:if isTrue="{!v.search}">
+    <aura:if isTrue="{!v.search}">
         <c:ProductSearch />
     </aura:if>
 
-    <aura:if isTrue="{!v.shop}">
+    <!--<aura:if isTrue="{!v.shop}">
         <c:shop />
     </aura:if>-->
 
@@ -76,9 +76,9 @@
         <c:CartPage />
     </aura:if>
 
-    <!--<aura:if isTrue="{!v.account}">
+    <aura:if isTrue="{!v.account}">
         <c:AccountForm />
-    </aura:if>-->
+    </aura:if>
 
     <c:PageFooter />
 
