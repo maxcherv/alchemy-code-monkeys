@@ -47,6 +47,14 @@
     <ltng:require scripts="{!$Resource.Assets + '/assets/js/plugins/timecircles.js'}"/>
     <ltng:require scripts="{!$Resource.Assets + '/assets/js/main.js'}"/>
 
+    <aura:registerEvent name="TabClicked" type="c:TabClicked" />
+
+    <br />
+    <h1 style="text-align: center;">Contact Us</h1>
+    <br />
+    <p style="text-align: center;">This form will submit questions to represenative of your choosing. For submission of issues with an order, please submit those <a style="color: blue;" onclick="{!c.TabWasClicked}">here</a>.</p>
+    <br />
+
     <div class="slds-grid slds-gutters slds-grid_align-center">
         <div class="slds-col slds-size_4-of-12">
             <lightning:input type="String" value="{!v.firstName}" label="First Name:" style="font-weight: bold;"/>

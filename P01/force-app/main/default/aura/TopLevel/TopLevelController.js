@@ -42,6 +42,9 @@
             case "SEARCH":
                 component.set("v.search", true);
                 break;
+            case "here":
+                component.set("v.serviceCloud", true);
+                break;
 
         }
 
