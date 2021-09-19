@@ -1,4 +1,4 @@
-<aura:component implements="forceCommunity:availableForAllPageTypes" access="global"
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
 
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/bootstrap.min.css'}" />
     <ltng:require styles="{!$Resource.Assets + '/assets/css/vendor/font-awesome.css'}" />
@@ -75,7 +75,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">My Account<i class="fa fa-chevron-down"></i></a>
+                                    <li><a href="#" onclick="{!c.TabWasClicked}">My Account<i class="fa fa-chevron-down"></i></a>
                                         <ul class="ht-dropdown ht-my_account">
                                             <li><a href="javascript:void(0)">Register</a></li>
                                             <li class="active"><a href="javascript:void(0)">Login</a></li>

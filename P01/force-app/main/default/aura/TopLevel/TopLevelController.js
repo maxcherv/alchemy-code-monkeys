@@ -36,7 +36,7 @@
             case "CART":
                 component.set("v.cart", true);
                 break;
-            case "ACCOUNT":
+            case "MY ACCOUNT":
                 component.set("v.account", true);
                 break;
             case "SEARCH":
