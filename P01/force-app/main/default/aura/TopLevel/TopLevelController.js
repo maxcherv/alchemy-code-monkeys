@@ -36,11 +36,14 @@
             case "CART":
                 component.set("v.cart", true);
                 break;
-            case "ACCOUNT":
+            case "MY ACCOUNT":
                 component.set("v.account", true);
                 break;
             case "SEARCH":
                 component.set("v.search", true);
+                break;
+            case "here":
+                component.set("v.serviceCloud", true);
                 break;
 
         }
