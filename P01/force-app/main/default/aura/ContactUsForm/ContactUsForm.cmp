@@ -50,7 +50,7 @@
     <aura:registerEvent name="TabClicked" type="c:TabClicked" />
 
     <br />
-    <h1 style="text-align: center;">Contact Us</h1>
+    <h1 style="text-align: center; color: rgb(183, 110, 121); font-weight: bold;">Contact Us</h1>
     <br />
     <p style="text-align: center;">This form will submit questions to represenative of your choosing. For submission of issues with an order, please submit those <a style="color: blue;" onclick="{!c.TabWasClicked}">here</a>.</p>
     <br />
