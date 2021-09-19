@@ -11,7 +11,7 @@
                 component.set("v.availableUsers", response.getReturnValue());
 
             }else{
-                console.log("There was an error with communicating with the sever");
+                console.log("There was an error Getting the available users.");
             }
 
         })
