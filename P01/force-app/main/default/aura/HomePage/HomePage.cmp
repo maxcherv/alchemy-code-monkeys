@@ -1,5 +1,4 @@
 <aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
-    <lightning:input type="text" label="We are farmers dum da dum da dum dum duh" />
 
     <!-- For T&j products Slide Item Area -->
     

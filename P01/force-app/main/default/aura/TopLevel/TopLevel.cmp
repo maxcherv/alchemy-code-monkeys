@@ -88,9 +88,9 @@
         <c:AccountForm />
     </aura:if>
 
-    <!--<aura:if isTrue="{!v.serviceCloud}">
-        <c:ServiceCloud />
-    </aura:if>-->
+    <aura:if isTrue="{!v.serviceCloud}">
+        <c:CaseGenerator />
+    </aura:if>
 
     <c:PageFooter />
 
