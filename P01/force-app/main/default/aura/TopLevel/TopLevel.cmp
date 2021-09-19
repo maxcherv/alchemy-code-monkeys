@@ -48,6 +48,12 @@
 
     <aura:handler name="TabClicked" event="c:TabClicked" action="{!c.changeView}" />
 
+    <head>
+        <title>
+            T&amp;J Jewelry
+        </title>
+    </head>
+
     <c:PageHeader />
 
     <aura:if isTrue="{!v.home}">

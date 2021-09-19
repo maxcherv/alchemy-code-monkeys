@@ -6,8 +6,12 @@ public with sharing class ContactUsFormController {
         Boolean emailSendSuccess = false;
         String dispName = 'User Question';
         String[] toAddresses = new List<String>();
+<<<<<<< Updated upstream
         String defaultAddress = 'jacob.johnson@revature.net';
         system.debug('In apex');
+=======
+        String defaultAddress = 'max.chervinsky@gmail.com';
+>>>>>>> Stashed changes
         
         //Accounts for first available
         //Ideally add this to a queue if possible
