@@ -14,6 +14,7 @@
         component.set("v.cart", false);
         component.set("v.account", false);
         component.set("v.search", false);
+        component.set("v.serviceCloud", false);
 
         //Select which to turn on
         switch(newTab){
