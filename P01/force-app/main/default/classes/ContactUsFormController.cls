@@ -7,7 +7,6 @@ public with sharing class ContactUsFormController {
         String dispName = 'User Question';
         String[] toAddresses = new List<String>();
         String defaultAddress = 'max.chervinsky@gmail.com';
-        system.debug('In apex');
         
         //Accounts for first available
         //Ideally add this to a queue if possible
