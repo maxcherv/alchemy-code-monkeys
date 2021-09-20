@@ -62,7 +62,12 @@
         <name>LightningComponentBundle</name>
     </types>
     <types>
-        <members>*</members>
+        <members>businessStockImage1</members>
+        <members>businessStockImage2</members>
+        <members>businessStockImage3</members>
+        <members>businessStockImage4</members>
+        <members>businessStockImage5</members>
+        <members>businessStockImage6</members>
         <name>StaticResource</name>
     </types>
     <types>
