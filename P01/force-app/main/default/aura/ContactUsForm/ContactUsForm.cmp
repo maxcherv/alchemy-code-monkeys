@@ -93,4 +93,5 @@
         <lightning:button label="Submit" onclick="{!c.sendEmail}" class="slds-align_absolute-center" />
     </div>
 
+    
 </aura:component>
