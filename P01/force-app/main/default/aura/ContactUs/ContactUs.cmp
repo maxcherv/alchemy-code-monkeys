@@ -1,0 +1,17 @@
+<aura:component controller="ContactUsController">
+    <aura:attribute name="emailAttr" type="String"/>
+    <aura:attribute name="phoneAttr" type="String"/>
+    <aura:attribute name="requestAttr" type="String"/>
+    <div class="slds-size_1-of-2">
+    <lightning:card title="Contact Us">
+        <div class="slds-p-left_small slds-p-right_small">
+            <lightning:input label="Email" type="email" name="email" value="{!v.emailAttr}"/>
+            <lightning:input label="Phone" type="phone" name="phone" value="{!v.phoneAttr}"/>
+            <lightning:textarea label="Request Description" name="request" value="{!v.requestAttr}"/>
+        </div>
+        <div class="slds-p-left_small">
+        	<lightning:button variant="brand" label="Submit" onclick="{!c.handleClick}"/>
+        </div>
+    </lightning:card>
+    </div>
+</aura:component>

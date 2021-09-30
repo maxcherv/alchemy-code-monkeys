@@ -1,0 +1,18 @@
+<aura:component controller="ListofSalesController"> <!--Note that this controller mentioned is the server side Apex controller-->
+    
+    <aura:attribute name="salesData" type="Sales__c"/>
+    <aura:attribute name="accountData" type="Account"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="test1" type="Boolean"/>
+    <aura:attribute name="test2" type="Boolean"/>
+    
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    
+    <div style="height: 300px">
+    <lightning:datatable
+    		keyField="Name"
+            data="{!v.salesData}"
+            columns="{!v.columns}"
+            hideCheckboxColumn="true"/>
+    </div>
+</aura:component>
